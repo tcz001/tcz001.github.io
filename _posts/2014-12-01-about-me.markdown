@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Welcome to my new blog"
-date:   2014-12-01 15:29:57
+title:  Welcome to my new blog
 categories: murmur
+published: true
 ---
 
 换新博客了，最开始的时候还在头疼wordpress到jekyll的迁移问题，但是经过一番折腾之后，发现原来的博客其实干货并不多，干脆dump掉mysql，全部推倒重来好了。

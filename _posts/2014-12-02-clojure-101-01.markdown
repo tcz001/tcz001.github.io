@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "ClojureBoys-101-warm-up"
-date:   2014-12-02 15:29:57
+title:  ClojureBoys-101-warm-up
 categories: ClojureBoys-101
+published: true
 ---
 如果你问
 
