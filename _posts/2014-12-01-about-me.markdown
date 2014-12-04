@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Welcome to my new blog
-categories: murmur
+title:  "Welcome to my new blog"
+categories: "murmur"
 published: true
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ClojureBoys-101-my-first-cljproj
+title: "ClojureBoys-101-my-first-cljproj"
 categories: "ClojureBoys-101"
 published: false
 ---

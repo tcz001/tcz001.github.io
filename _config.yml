@@ -10,3 +10,60 @@ github_username:  tcz001
 
 # Build settings
 markdown: kramdown
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://blog.torchz.net/'
+  media: 'media'
+  metadata:
+    _posts:
+      - name: "categories"
+        field:
+          element: "text"
+          value: ""
+      - name: "layout"
+        field:
+          element: "text"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "splash"
+        field:
+          element: "text"
+          label: "Splash image"
+          value: ""
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options:
+            - name: "clojure"
+              value: "clojure"
+            - name: "hacker"
+              value: "hacker"
+            - name: "murmur"
+              value: "murmur"
+            - name: "devops"
+              value: "devops"
+            - name: "danmaku"
+              value: "danmaku"
+            - name: "Japan"
+              value: "japan"
+    _posts/static:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          value: ""
