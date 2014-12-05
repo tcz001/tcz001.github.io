@@ -6,5 +6,13 @@ published: false
 ---
 
 lein is no more than a generator.
-有关generator其实已经有很多比较成功的例子了，从Rails到Yeoman，simplicity and quick achievement是每一个提供脚手架工具都必须优先考虑的事情。
-就这点来说，对于将DRY发挥到极致的Clojure强迫症程序员来说，不只是你的project，哪怕是一个languagefeature，他们都希望能够通过简单的生成器来管理，于是lein就诞生了。
+有关generator其实已经有很多比较成功的例子了，从从Rails到Yeoman，
+> simplicity and quick achievement
+
+优雅的模板是每一个脚手架工具都必须优先考虑的事情。
+
+对于将DRY强迫症发挥到极致的Clojure程序员来说，不只是project，就是连language feature，他们都希望能够通过简单的生成器来管理，于是lein就诞生了。
+
+{% highlight clojure %}
+
+{% endhighlight %}
