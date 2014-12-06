@@ -170,4 +170,4 @@ nil
 
 
 ###[Clojure's Quick Reference](https://clojuredocs.org/quickref)
-了解完以上部分之后，你差不多就可以开始用REPL做探索式学习了，不要害怕犯错，下一篇会开始引入一些题目帮助大家了解Clojure的能力，你需要学习的Clojure知识都可以在Clojuredocs站点找到，这是一个wiki
+了解完以上部分之后，你差不多就可以开始用REPL做探索式学习了，不要害怕犯错，下一篇会开始引入一些题目帮助大家了解Clojure的能力，你需要学习的Clojure知识都可以在Clojuredocs站点找到，这是一个由社区维护的wiki，提供了常用的documentation和一些代码样例，初学Clojure的时候没事刷一刷，总能学到不少有趣的东西。
