@@ -137,6 +137,15 @@ user=> (foo 3 4)
 上面我们用`def`定义了一个以`foo`命名的函数，其构造表达式就是`(fn [a b] (* a b))`
 函数体是由一个`(fn name? [params*] exprs*)`定义的。调用一个函数除了给它def一个名称之外还可以有匿名的方式`((fn [a b c] (+ a b c)) 2 4 6)`。
 
+下面还有一个有趣的例子，
+
+{% highlight clojure %}
+user=> (let [+(fn [a b] (* a b))] (+ 2 3))
+6
+{% endhighlight %}
+
+如果你有js经验，想必已经意识到这句代码里的let其实使用了一个context binding域，将原来的+绑定为新的fn函数，当然，这种绑定只在这个let生效的函数域内有效，你也可以用let来为变量绑定实参，这些都会在以后的课程中提及，在此就不赘述了。
+
 另外需要介绍的一个东西是doc和source两个函数，它们是查询一个函数使用方式和定义的好手段，当你不确定一个函数有什么用的时候，优先考虑这两个函数。
 {% highlight clojure %}
 user=> (doc doc)
