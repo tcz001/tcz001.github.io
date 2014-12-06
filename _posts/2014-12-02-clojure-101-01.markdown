@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "ClojureBoys-101-warm-up"
+title: "ClojureBoys-101-warm-up"
 categories: "ClojureBoys-101"
 published: true
 ---
+
 如果你问
 
 > 为什么我要用Clojure？
@@ -125,3 +126,39 @@ clojure.lang.PersistentList
 {% endhighlight %}
 
 现在我们可以很容易的推断出Clojure的解释过程，首先它会获取一个序列List，通过这个序列交给解释器去做真正的调用。
+
+{% highlight clojure %}
+user=> (def foo (fn [a b] (* a b)))
+#'user/foo
+user=> (foo 3 4)
+12
+{% endhighlight %}
+
+上面我们用`def`定义了一个以`foo`命名的函数，其构造表达式就是`(fn [a b] (* a b))`
+函数体是由一个`(fn name? [params*] exprs*)`定义的。调用一个函数除了给它def一个名称之外还可以有匿名的方式`((fn [a b c] (+ a b c)) 2 4 6)`。
+
+另外需要介绍的一个东西是doc和source两个函数，它们是查询一个函数使用方式和定义的好手段，当你不确定一个函数有什么用的时候，优先考虑这两个函数。
+{% highlight clojure %}
+user=> (doc doc)
+-------------------------
+clojure.repl/doc
+([name])
+Macro
+  Prints documentation for a var or special form given its name
+nil
+
+user=> (source source)
+(defmacro source
+  "Prints the source code for the given symbol, if it can find it.
+  This requires that the symbol resolve to a Var defined in a
+  namespace for which the .clj is in the classpath.
+
+  Example: (source filter)"
+  [n]
+  `(println (or (source-fn '~n) (str "Source not found"))))
+nil
+{% endhighlight %}
+
+
+###[Clojure's Quick Reference](https://clojuredocs.org/quickref)
+了解完以上部分之后，你差不多就可以开始用REPL做探索式学习了，不要害怕犯错，下一篇会开始引入一些题目帮助大家了解Clojure的能力，你需要学习的Clojure知识都可以在Clojuredocs站点找到，这是一个wiki
