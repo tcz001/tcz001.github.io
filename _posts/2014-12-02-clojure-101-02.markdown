@@ -7,6 +7,7 @@ published: true
 
 lein is no more than a generator.
 有关generator其实已经有很多比较成功的例子了，从从Rails到Yeoman，
+
 > simplicity and quick achievement
 
 优雅的模板是每一个脚手架工具都必须优先考虑的事情。
