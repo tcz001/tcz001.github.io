@@ -127,6 +127,8 @@ clojure.lang.PersistentList
 
 现在我们可以很容易的推断出Clojure的解释过程，首先它会获取一个序列List，通过这个序列交给解释器去做真正的调用。
 
+###声明函数和“变量”
+
 {% highlight clojure %}
 user=> (def foo (fn [a b] (* a b)))
 #'user/foo
@@ -145,6 +147,8 @@ user=> (let [+(fn [a b] (* a b))] (+ 2 3))
 {% endhighlight %}
 
 如果你有js经验，想必已经意识到这句代码里的let其实使用了一个context binding域，将原来的+绑定为新的fn函数，当然，这种绑定只在这个let生效的函数域内有效，你也可以用let来为变量绑定实参，这些都会在以后的课程中提及，在此就不赘述了。
+
+### doc和source
 
 另外需要介绍的是doc和source两个函数，它们是查询core API定义的好手段，当你不确定一个函数有什么用以及如何实现的时候，优先考虑这两个函数。
 {% highlight clojure %}
