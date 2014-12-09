@@ -2,7 +2,7 @@
 layout: post
 title: "ClojureBoys-101-my-first-cljproj"
 categories: "ClojureBoys-101"
-published: true
+published: false
 ---
 
 lein is no more than a generator.
