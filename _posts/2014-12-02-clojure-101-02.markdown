@@ -24,4 +24,5 @@ See also: readme, faq, tutorial, news, sample, profiles, deploying, gpg, mixed-s
 
 ## 石头剪刀布
 
-这是一个简单的例子，我们可以利用core.async构建出一个石头剪刀布的，然后同时感谢Clojurescript，我们还可以把它移植到browser端来。
+这是一个简单的例子，我们可以利用core.async和core.typed提供的语义级别支持，构建出一个石头剪刀布的，然后同时感谢Clojurescript，我们还可以把它移植到browser端来。
+
