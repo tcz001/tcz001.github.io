@@ -32,7 +32,7 @@ See also: readme, faq, tutorial, news, sample, profiles, deploying, gpg, mixed-s
 
 通过`lein new webapp`命令可以搭建起一个简单的工程脚手架。
 
-```
+{% highlight bash %}
 tree
 .
 |-- LICENSE
@@ -60,7 +60,7 @@ tree
 `-- test
     `-- webapp
         `-- core_test.clj
-```
+{% endhighlight %}
 
 ### (talk-about namespace)
 其中的核心模块就放在core.clj中，用任何编辑器打开这个文件。
