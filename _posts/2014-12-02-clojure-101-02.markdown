@@ -25,6 +25,8 @@ See also: readme, faq, tutorial, news, sample, profiles, deploying, gpg, mixed-s
 ## 石头剪刀布
 
 这是一个简单的例子，我们可以利用core.async和core.typed提供的语义级别支持，构建出一个石头剪刀布的，然后同时感谢Clojurescript，我们还可以把它移植到browser端来。
+
+首先描述一下问题，我们希望获得一个分歧终端机的功能，所以我们首先需要一组石头剪刀布的行为，以及相应的胜负规则，之后还需要定义一些数据结构用来判断比赛胜负、打印输出结果、并且扩展一些队列和多次迭代的功能。
 {% highlight clojure %}
 ; Adapted from: http://tech.puredanger.com/2013/07/10/rps-core-async/
 (ns webapp.rps-async
