@@ -27,13 +27,86 @@ See also: readme, faq, tutorial, news, sample, profiles, deploying, gpg, mixed-s
 这是一个简单的例子，我们可以利用core.async和core.typed提供的语义级别支持，构建出一个石头剪刀布的，然后同时感谢Clojurescript，我们还可以把它移植到browser端来。
 
 首先描述一下问题，我们希望获得一个分歧终端机的功能，所以我们首先需要一组石头剪刀布的行为，以及相应的胜负规则，之后还需要定义一些数据结构用来判断比赛胜负、打印输出结果、并且扩展一些队列和多次迭代的功能。
+
+### (create project)
+
+通过`lein new webapp`命令可以搭建起一个简单的工程脚手架。
+
+```
+tree
+.
+|-- LICENSE
+|-- README.md
+|-- doc
+|   `-- intro.md
+|-- pom.xml
+|-- project.clj
+|-- resources
+|-- src
+|   `-- webapp
+|       |-- core.clj
+|       `-- rps_async.clj
+|-- target
+|   |-- classes
+|   |   `-- META-INF
+|   |       `-- maven
+|   |           `-- webapp
+|   |               `-- webapp
+|   |                   `-- pom.properties
+|   |-- repl-port
+|   |-- stale
+|   |   `-- extract-native.dependencies
+|   `-- webapp-0.1.0-SNAPSHOT.jar
+`-- test
+    `-- webapp
+        `-- core_test.clj
+```
+
+### (talk-about namespace)
+其中的核心模块就放在core.clj中，用任何编辑器打开这个文件。
+{% highlight clojure %}
+(ns webapp.core)
+
+(defn foo
+  "I don't do a whole lot."
+  [x]
+  (println x "Hello, World!"))
+{% endhighlight %}
+
+首先Clojure沿用了java的namespace概念，第一行的ns函数就是定义了一个namespace。
+通过这样的声明，你可以将classpath中的Clojure namespace方便地载入进来，foo就是该命名空间下的函数了。
+[Tips：namespace由于java的历史原因，需要对`-`向下划线`_`的转换才能正常使用，例如rps_async.clj的namespace其实是rps-async。]
+
+这时不妨打开`lein repl`试一下。
+{% highlight clojure %}
+user=> (require 'webapp.core)
+nil
+user=> (webapp.core/foo 'Fan)
+Fan Hello, World!
+nil
+{% endhighlight %}
+
+同时你也可以使用use函数来直接引用namespace到当前context。
+
+{% highlight clojure %}
+user=> (use 'webapp.core)
+nil
+user=> (foo 'Fan)
+Fan Hello, World!
+nil
+{% endhighlight %}
+
+### (build models)
+
 {% highlight clojure %}
 ; Adapted from: http://tech.puredanger.com/2013/07/10/rps-core-async/
 (ns webapp.rps-async
   (:require [clojure.core.typed :as t]
             [clojure.core.async :as a]
             [clojure.core.typed.async :as ta]))
+{% endhighlight %}
 
+{% highlight clojure %}
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Types
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
