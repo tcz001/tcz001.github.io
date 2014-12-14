@@ -14,11 +14,19 @@ layout: post
 ## What is K-means
 K-means如其名，为样本空间提供k个means，通过反复迭代，训练出能够区分出k个类别的线性函数。
 它包含几个阶段：
-1. Initialization
+
+### 1. Initialization
+
 ![K_Means_Example_Step_1](http://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/K_Means_Example_Step_1.svg/124px-K_Means_Example_Step_1.svg.png)
-2. Assignment step
+
+### 2. Assignment step
+
 ![K_Means_Example_Step_2](http://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/K_Means_Example_Step_2.svg/139px-K_Means_Example_Step_2.svg.png)
-3. Update step
+
+### 3. Update step
+
 ![K_Means_Example_Step_3](http://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/K_Means_Example_Step_3.svg/139px-K_Means_Example_Step_3.svg.png)
-4. Repeat steps 2 and 3
+
+### 4. Repeat steps 2 and 3
+
 ![K_Means_Example_Step_4](http://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/K_Means_Example_Step_4.svg/139px-K_Means_Example_Step_4.svg.png)
