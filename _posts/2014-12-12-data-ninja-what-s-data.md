@@ -17,16 +17,16 @@ K-means如其名，为样本空间提供k个means，通过反复迭代，训练�
 
 ### Initialization
 
-![K_Means_Example_Step_1](/http://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/K_Means_Example_Step_1.svg/124px-K_Means_Example_Step_1.svg.png)
+![K_Means_Example_Step_1](http://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/K_Means_Example_Step_1.svg/124px-K_Means_Example_Step_1.svg.png)
 
 ### Assignment step
 
-![K_Means_Example_Step_2](/http://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/K_Means_Example_Step_2.svg/139px-K_Means_Example_Step_2.svg.png)
+![K_Means_Example_Step_2](http://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/K_Means_Example_Step_2.svg/139px-K_Means_Example_Step_2.svg.png)
 
 ### Update step
 
-![K_Means_Example_Step_3](/http://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/K_Means_Example_Step_3.svg/139px-K_Means_Example_Step_3.svg.png)
+![K_Means_Example_Step_3](http://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/K_Means_Example_Step_3.svg/139px-K_Means_Example_Step_3.svg.png)
 
 ### Repeat steps 2 and 3
 
-![K_Means_Example_Step_4](/http://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/K_Means_Example_Step_4.svg/139px-K_Means_Example_Step_4.svg.png)
+![K_Means_Example_Step_4](http://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/K_Means_Example_Step_4.svg/139px-K_Means_Example_Step_4.svg.png)
