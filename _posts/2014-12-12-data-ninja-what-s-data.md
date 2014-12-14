@@ -1,6 +1,6 @@
 ---
 published: false
-title: "Data-ninja-What's-Data"
+title: "Data-ninja-clustering-kmeans"
 layout: post
 ---
 
