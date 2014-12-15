@@ -96,7 +96,7 @@ Fan Hello, World!
 nil
 {% endhighlight %}
 
-### (build models)
+### (require libs)
 
 {% highlight clojure %}
 ; Adapted from: http://tech.puredanger.com/2013/07/10/rps-core-async/
@@ -105,6 +105,8 @@ nil
             [clojure.core.async :as a]
             [clojure.core.typed.async :as ta]))
 {% endhighlight %}
+
+### (build types)
 
 {% highlight clojure %}
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -127,6 +129,11 @@ nil
   "The result of a rock-paper-scissors match.
   A 3 place vector of the two player moves, and the winner"
   '[PlayerMove PlayerMove PlayerName])
+{% endhighlight %}
+
+### (composite-types)
+
+{% highlight clojure %}
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Implementation
@@ -137,7 +144,11 @@ nil
 
 (t/ann BEATS (t/Map Move Move))
 (def BEATS {:rock :scissors, :paper :rock, :scissors :paper})
+{% endhighlight %}
 
+### (function-types)
+
+{% highlight clojure %}
 (t/ann rand-player [PlayerName -> (ta/Chan PlayerMove)])
 (defn rand-player
   "Create a named player and return a channel to report moves."
@@ -211,8 +222,11 @@ nil
         (assert winner)
         (recur (dec remaining)
                (merge-with + results {winner 1}))))))
+{% endhighlight %}
 
+### (lambda)
 
+{% highlight clojure %}
 (fn []
   (t/ann-form (a/<!! (init))
               (t/U nil RPSResult)))
