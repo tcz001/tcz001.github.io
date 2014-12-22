@@ -30,3 +30,6 @@ K-means如其名，为样本空间提供k个means，通过反复迭代，训练�
 ### 4. Repeat steps 2 and 3
 
 ![K_Means_Example_Step_4](http://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/K_Means_Example_Step_4.svg/139px-K_Means_Example_Step_4.svg.png)
+
+简言之，k-means是一个依赖线性函数来分离数据的方法。它通过反复迭代的方式，深度挖掘数据之间的关联密度，但是由于其必须优先确定种类的缘故，尽管训练过程中是非监督的，但是针对“新类别发现”这种动态环境适配性不是很强，由此而衍生出的算法很多，有依据正态分布来自动发现新类别的，也有引入监督学习来实现新分类的，也有增加维度来从抽象层面改变聚类算法设计的。这些都可以在各大推荐系统、模式识别等论文中找到。
+## How is K-means
