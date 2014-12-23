@@ -6,7 +6,7 @@ layout: post
 
 ## CA & chain of trust
 
-session中有个争议点，主要是针对CA究竟能不能被hack，在这里解释一下CA证书真正的签发与验证原理。
+上周在西安做的session中有个争议点，主要是针对CA究竟能不能被hack，在这里解释一下CA证书真正的签发与验证原理。
  
 如下图，签发与认证
 ![CA sign and verify](/_posts/ffd419fd-3820-3672-93b5-f703627f51cb.png)
