@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: "security-CA & chain of trust"
 layout: post
 ---
