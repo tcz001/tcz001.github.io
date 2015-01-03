@@ -1,0 +1,2 @@
+;; Analyzed by ClojureScript 0.0-2511
+{:imports nil, :require-macros {cljs.core.async.macros cljs.core.async.macros}, :use-macros {go cljs.core.async.macros}, :requires {cljs.core.async cljs.core.async}, :uses {timeout cljs.core.async, <! cljs.core.async, chan cljs.core.async, >! cljs.core.async, put! cljs.core.async}, :excludes #{}, :doc nil, :name async-tut1.core}
