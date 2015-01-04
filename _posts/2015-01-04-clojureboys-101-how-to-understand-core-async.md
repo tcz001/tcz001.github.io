@@ -2,6 +2,9 @@
 published: false
 title: "ClojureBoys-101-how-to-understand-core.async"
 layout: post
+categories: "ClojureBoys-101"
+tags: 
+  - clojure
 ---
 
 ## A New Post
