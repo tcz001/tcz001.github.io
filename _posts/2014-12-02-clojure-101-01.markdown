@@ -3,6 +3,8 @@ layout: post
 title: "ClojureBoys-101-warm-up"
 categories: "ClojureBoys-101"
 published: true
+tags: 
+  - clojure
 ---
 
 如果你问
