@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: "Data-ninja-nlp-basis"
 layout: post
 ---
