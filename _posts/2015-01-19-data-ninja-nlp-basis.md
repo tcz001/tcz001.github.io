@@ -1,6 +1,7 @@
 ---
 published: true
 title: "Data-ninja-nlp-basis"
+categories: "Data-ninja"
 layout: post
 ---
 

@@ -42,6 +42,8 @@ prose:
           options:
             - name: "clojure"
               value: "clojure"
+            - name: "data"
+              value: "data"
             - name: "hacker"
               value: "hacker"
             - name: "murmur"

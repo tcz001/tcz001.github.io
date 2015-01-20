@@ -1,6 +1,7 @@
 ---
 published: true
 title: "security-CA & chain of trust"
+categories: "security"
 layout: post
 ---
 

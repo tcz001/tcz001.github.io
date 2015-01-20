@@ -1,6 +1,7 @@
 ---
 published: true
 title: "Data-ninja-clustering-kmeans"
+categories: "Data-ninja"
 layout: post
 ---
 
