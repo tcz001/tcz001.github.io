@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   magic studio
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://blog.torchz.net" # the base hostname & protocol for your site
-twitter_username: torchz
+twitter_username: tcz001
 github_username:  tcz001
 
 # Build settings
