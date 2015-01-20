@@ -6,4 +6,4 @@ layout: post
 
 ## Log is data
 
-http://www.slideshare.net/FanJiang5/log-mining
+[log mining](http://www.slideshare.net/FanJiang5/log-mining)
