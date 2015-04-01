@@ -1,6 +1,6 @@
 ---
 published: true
-title: "security-Github & GreatFire man-in-middle DDOS attack"
+title: "security-man-in-middle DDOS"
 layout: post
 ---
 
