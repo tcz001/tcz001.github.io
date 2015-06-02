@@ -19,4 +19,4 @@ And ask yourself the reason for making a thing pulic, then you can find somethin
 
 - I'm doing public things, which don't want you know who did it
 - I'm sending out messages to someone, which also want others authorized to read if necessary
-- You are trusting me as who I am, which can be helped by my trusted agencies.
+- You are trusting me as who I am, which can be delegated by my trusted agencies.
