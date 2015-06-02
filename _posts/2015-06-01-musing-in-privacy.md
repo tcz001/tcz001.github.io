@@ -14,3 +14,6 @@ Ask yourself the reason for privacy caring. I'm coming up with several items whi
 - I'm doing secret things, which don't want you know
 - I'm sending out messages to someone, which don't want others spy
 - You are trusting me as who I am, which don't want others to pretend
+
+And ask yourself the reason for making a thing pulic, then you can find something conflict.
+
