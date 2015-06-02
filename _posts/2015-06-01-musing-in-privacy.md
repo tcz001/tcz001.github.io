@@ -4,6 +4,7 @@ title: Musing in Privacy
 layout: post
 ---
 
-## A New Post
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+## Why you should care about privacy
+
+While we are making descion to contribute to privacy tools like Enigmail/GnuPG, the idea comes from our enthusiasts but not from common people, who are possiblly ignoring their privacy safety, or even their privacy's value.
