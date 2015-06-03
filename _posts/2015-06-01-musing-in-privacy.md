@@ -34,10 +34,15 @@ There are extra thoughts we may miss above, don't be selfish.
 ## What's the current situation about privacy
 
 You are traced in a bunch of levels, some you may find, some you may not realize.
+
+### Great Firewall
+
 For people in China, when it comes to our proud GFW, problems are really apparent, everyone on the internet may realize its existance, people are blocked from several websites in a black list, and the primary circuit router will always tracing several sensitive words, and judge the accessibility of your request.
 In this case people still can reach those stuff via VPN tools. And https will in most cases protect your data in transmission, except when Man-in-middle and TLS certificates spoofing attack happens.
 
 This is a privacy domain problem which fits for the three ideas we mentioned above.
+
+### NSA PRISM
 
 ![NSA](https://www.eff.org/files/2013/12/24/nsa-action-1.png)
 
