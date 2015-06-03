@@ -37,7 +37,7 @@ This is a privacy domain problem which fits for the three ideas we mentioned abo
 
 What about NSA? NSA will be tracing your communication through different ways, people were not realizing it when they don't make anything attacting NSA's attention. Only after Snowden publish the PRISM, common people start to realize the problem. One of the consequences of the Edward Snowden story is a heightened discussion about the importance of privacy - in particular when or if privacy should be traded off in order to combat terrorism.
 
-This happens not meets any of the benefit against first three ideas, but will definitely affect Journalists and Activists. Without good journalists people can't understand what is really happening and thus can't cast a meaningful vote. Activists who seem fringe now, may lead us to changes that are self-evident in a few generations.
+This happens not meeting any of the three common sense for most people but will definitely affect Journalists and Activists. Without good journalists people can't understand what is really happening and thus can't cast a meaningful vote. Activists who seem fringe now, may lead us to changes that are self-evident in a few generations.
 
 After the stories came into people's horizon, there have been a lot of activities taken around the world. Though privacy awareness and technology are growing, the way of tracing is also growing. TLS/SSL, OpenPGP and RTP are the most common seen techs,which are used to protect privacy and also regular security in business. OWASP is providing a way to audit a web system. And Threat Modeling is now becoming most popular tool to analyze security stuff.
 
