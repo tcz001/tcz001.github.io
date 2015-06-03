@@ -1,6 +1,6 @@
 ---
 published: true
-title: Musing in Privacy
+title: "STRIKE - Musing in Privacy"
 layout: post
 ---
 
