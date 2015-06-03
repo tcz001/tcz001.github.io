@@ -36,7 +36,7 @@ For people in China, when it comes to our proud GFW, problems are really apparen
 In this case people still can reach those stuff via VPN tools. And https will in most cases protect your data in transmission, except when Man-in-middle and TLS certificates spoofing attack happens.
 
 This is a privacy domain problem which fits for the three ideas we mentioned above.
-
+![NSA](https://www.eff.org/files/2013/12/24/nsa-action-1.png)
 What about NSA? NSA will be tracing your communication through different ways, people were not realizing it when they don't make anything attacting NSA's attention. Only after Snowden publish the PRISM, common people start to realize the problem. One of the consequences of the Edward Snowden story is a heightened discussion about the importance of privacy - in particular when or if privacy should be traded off in order to combat terrorism.
 
 This happens not meeting any of the three common sense for most people but will definitely affect Journalists and Activists. Without good journalists people can't understand what is really happening and thus can't cast a meaningful vote. Activists who seem fringe now, may lead us to changes that are self-evident in a few generations.
