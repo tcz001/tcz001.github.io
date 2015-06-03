@@ -26,3 +26,8 @@ There is extra ideas you may not come up with, don't be selfish.
 
 - I'm not alone, so the value of privacy to us isn't primarily about our privacy but about those who play a more active role in the operation of a democratic system of government.
 - If you can bring a better world which I prefer, I don't care whether you're tracing my privacy or protecting it. But don't make me feel uncomfortable before enjoying the compensation.
+
+## What's the current situation about privacy
+
+You are traced in a bunch of levels, some you may find, some you may not realize.
+For people in China, when it comes to our proud GFW things are really apparent, everyone on the internet may know it's existance, people are blocked from several websites in a black list, and the primary circuit router will always tracing several sensitive words. 
