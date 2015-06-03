@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Musing in Privacy
 layout: post
 ---
