@@ -50,6 +50,8 @@ What about NSA? NSA will be tracing your communication through different ways, p
 
 This happens not meeting any of the three common sense for most people but will definitely affect Journalists and Activists. Without good journalists people can't understand what is really happening and thus can't cast a meaningful vote. Activists who seem fringe now, may lead us to changes that are self-evident in a few generations.
 
+### Privacy Crisis
+
 After the stories came into people's horizon, there have been a lot of activities taken around the world. Though privacy awareness and technology are growing, the way of tracing is also growing. TLS/SSL, OpenPGP and RTP are the most common seen techs,which are used to protect privacy and also regular security in business. OWASP is providing a way to audit a web system. And Threat Modeling is now becoming most popular tool to analyze security stuff.
 
 ![the logjam attack](https://www.netskope.com/wp-content/uploads/2015/05/logjam2.png)
