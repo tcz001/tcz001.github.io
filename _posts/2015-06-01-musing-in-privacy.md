@@ -4,6 +4,7 @@ title: "STRIKE-Musing in Privacy"
 layout: post
 ---
 
+
 ## Why you should care about privacy
 
 While we are making descion to contribute to privacy tools like Enigmail/GnuPG, the idea comes from our enthusiasts but not from common people, who are possiblly ignoring their privacy safety, or even their privacy's value.
@@ -54,7 +55,7 @@ This happens not meeting any of the three common sense for most people but will 
 
 After the stories came into people's horizon, there have been a lot of activities taken around the world. Though privacy awareness and technology are growing, the way of tracing is also growing. TLS/SSL, OpenPGP and RTP are the most common seen techs,which are used to protect privacy and also regular security in business. OWASP is providing a way to audit a web system. And Threat Modeling is now becoming most popular tool to analyze security stuff.
 
-![the logjam attack](https://www.netskope.com/wp-content/uploads/2015/05/logjam2.png =300x100)
-![heart bleed bug](http://heartbleed.com/heartbleed.png =100x100)
+![the logjam attack](https://www.netskope.com/wp-content/uploads/2015/05/logjam2.png)
+![heart bleed bug](http://heartbleed.com/heartbleed.png)
 
 Though these techs and tools are helping us in different perspective, there can still be weak points. Besides, the performace of system will usually be influenced by cryptography and more consuming protocols. Complexity is another enemy to security. Fatal issues like heartbleed and logjam are kept discovered these years, And thus, such kind of security problem will surely lead to big privacy issue one day if it's not fixed quickly.
