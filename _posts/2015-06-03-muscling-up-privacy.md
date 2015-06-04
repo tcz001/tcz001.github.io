@@ -6,6 +6,7 @@ layout: post
 
 
 
+
 ## Do less make more, do more make less
 
 Software is a thing that always conflict but effective as it is. When it comes to privacy tools, it seems like a encumbrance on most softwares. If you are using [OpenPGP](http://www.openpgp.org/) based tool (like [Enigmail](https://www.enigmail.net)) to manage you sensitive messages, you will always struggling about its antihuman-like apis. You will even have to understand (here's a [cartoon](https://www.powtoon.com/show/gmd6oEQEY8q/pgp-basics/) may help you understand more easily) the keystructure, symmetric/asymmetric cryptography and even the whole protocol specifications, so that you can get the idea of "Now, I'm really safe."
@@ -27,7 +28,10 @@ The more insidious problem in the subject of anonymity privacy is not so much wh
 
 ### Is browser safe enough to do cryptography?
 
-No, but yes partially. In-browser cryptography has been a long-run debating. There are many implementation around cryptography in browser, supporting TLS is now a basic function for most browsers, and W3C is also promoting new features like [WebCryptoAPI](http://www.w3.org/TR/WebCryptoAPI/) for further usage.
+No, but partially yes. In-browser cryptography has been a long-run debating. There are many implementation around cryptography in browser, supporting TLS is now a basic function for most browsers, and W3C is also promoting new features like [WebCryptoAPI](http://www.w3.org/TR/WebCryptoAPI/) for further usage. Though this draft is rolling out, not all specifics are implemented strongly, like CSPRNG. Having weak random numbers is a serious flaw in security, that would undo most of the value of encryption.
+
+The current issue around in-browser cryptography is not only the strongness of these cryptography implementations, but also the approach of Application Distribution.
+Scripts can be fetched and run on any place, if you provide all the key storage in browser, it may be dangerous to make cryptography tools run together with any other JavaScripts in same environment which may be injected or hijacked. Browser extension has better policy to verify your application digest. But in this case, people will not be able to enjoy the benefits of realtime web application distributions.
 
 ### Privacy is hidden but your code should not.
 
