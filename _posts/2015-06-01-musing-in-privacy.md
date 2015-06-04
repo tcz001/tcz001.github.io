@@ -35,7 +35,7 @@ There are extra thoughts we may miss above, don’t be selfish.
 
 ##What’s the current situation about privacy
 
-You are tracked in a bunch of channels, some you may find, some you may not realize.
+You are tracked in a bunch of channels, some you may know, some you may not realize.
 
 ###Advertising
 
