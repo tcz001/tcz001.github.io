@@ -29,4 +29,4 @@ The more insidious problem in the subject of anonymity privacy is not so much wh
 
 No, but yes partially. In-browser cryptography has been a long-run debating. There are many implementation around cryptography in browser, supporting TLS is now a basic function for most browsers, and W3C is also promoting new features like [WebCryptoAPI](http://www.w3.org/TR/WebCryptoAPI/) for further usage.
 
-### Privacy is hiden but your code should not.
+### Privacy is hidden but your code should not.
