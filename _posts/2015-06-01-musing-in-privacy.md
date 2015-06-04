@@ -49,6 +49,4 @@ This happens not meeting any of the three common sense for most people but will 
 
 After the stories came into people’s horizon, there have been a lot of activities taken around the world. Though privacy awareness and technology are growing, the way of tracing is also growing. TLS/SSL, OpenPGP and RTP are the most common seen techs,which are used to protect privacy and also regular security in business. OWASP is providing a way to audit a web system. And Threat Modeling is now becoming most popular tool to analyze security stuff.
 
-###heart bleed bugthe logjam attack
-
 Though these techs and tools are helping us in different perspective, there can still be weak points. Besides, the performance of system will usually be influenced by cryptography and more consuming protocols. Complexity is another enemy to security. Fatal issues like heartbleed and logjam are kept discovered these years, And thus, such kind of security problem will surely lead to big privacy issue one day if it’s not fixed quickly.
