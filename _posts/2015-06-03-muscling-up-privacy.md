@@ -11,6 +11,6 @@ Software is a thing that always conflict but effective as it is. When it comes t
 
 It's quite urgent issue of the time being. So STRIKE team is mainly up to bring better experience to these tools now.
 
-### Privacy is not equal to Security
+### Privacy does not equal to Security
 
 ### Is browser safe enough to do cryptography?
