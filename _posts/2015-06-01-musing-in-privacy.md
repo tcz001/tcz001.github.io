@@ -39,7 +39,7 @@ You are tracked in a bunch of channels, some you may know, some you may not real
 
 ###Advertising
 
-No matter where you go on the Internet you will see advertisements. Thanks to company like Google, the internet is flourishing as it is, though the Advertising is the biggest benefit to business world, it also helps people to get wanted information of goods, sometimes. Persona is a word more and more popular around Internet companies. But it's definitely an open violation of the anonymous principle of privacy. And you may never know how much they have. Maybe enough to clone another yourself biologically.
+No matter where you go on the Internet you will see advertisements. Thanks to companies like Google, the internet is flourishing as it is, though the Advertising is the biggest benefit to business world, it also helps people to get wanted information of goods, sometimes. Persona is a word more and more popular around Internet companies. But it's definitely an open violation of the anonymous principle of privacy. And you may never know how much they have. Maybe enough to clone another yourself biologically.
 
 Things are better since more and more browser are implementing the "do not track" function which can get rid of some cookie based tracking
 
