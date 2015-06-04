@@ -4,58 +4,51 @@ title: "STRIKE-Musing in Privacy"
 layout: post
 ---
 
+##Why you should care about privacy
 
-## Why you should care about privacy
+While we are making decision to contribute to privacy tools like Enigmail/GnuPG, the idea comes from our enthusiasts but not from common people, who are possibly ignoring their privacy safety, or even their privacy’s value.
 
-While we are making descion to contribute to privacy tools like Enigmail/GnuPG, the idea comes from our enthusiasts but not from common people, who are possiblly ignoring their privacy safety, or even their privacy's value.
+###Common sense
 
-### Common sense
+Ask yourself the reason for privacy caring. I’m coming up with several items which may fits to most people.
 
-Ask yourself the reason for privacy caring. I'm coming up with several items which may fits to most people.
+1. I’m doing secret things, which I don't want you to know.
+2. I’m sending out messages to someone, which I don't want others to spy.
+3. You are trusting me as who I am, that I don't want others to pretend.
 
-1. I'm doing secret things, which I don't want you know.
-2. I'm sending out messages to someone, which I don't want others spy.
-3. You are trusting me as who I am, which I don't want others to pretend.
+###Conflicts
 
-### Conflicts
+And ask yourself the reason for making a thing public, then you can find something conflict.
 
-And ask yourself the reason for making a thing pulic, then you can find something conflict.
-
-1. I'm doing public things, which don't want you know who did it.
-2. I'm sending out messages to someone, which also want others authorized to read if necessary.
+1. I’m doing public things, which I don't want you to know who did it.
+2. I’m sending out messages to someone, which also want others authorized to read if necessary.
 3. You are trusting me as who I am, which can be delegated by my trusted agencies.
 
-### Extra thoughts
+###Extra thoughts
 
-There are extra thoughts we may miss above, don't be selfish.
+There are extra thoughts we may miss above, don’t be selfish.
 
-1. I'm not alone, so the value of privacy to us isn't primarily about our privacy but about those who play a more active role in the operation of a democratic system of government.
-2. If you can bring a better world which I prefer, I don't care whether you're tracing my privacy or protecting it. But don't make me feel uncomfortable before enjoying the compensation.
+1. I’m not alone, so the value of privacy to us isn’t primarily about our privacy but about those who play a more active role in the operation of a democratic system of government.
+2. If you can bring a better world which I prefer, I don’t care whether you’re tracing my privacy or protecting it. But don't make me feel uncomfortable before enjoying the compensation.
 
-## What's the current situation about privacy
+##What’s the current situation about privacy
 
-You are traced in a bunch of levels, some you may find, some you may not realize.
+You are traced in a bunch of channels, some you may find, some you may not realize.
 
-### Great Firewall
+###Great Firewall
 
-For people in China, when it comes to our proud GFW, problems are really apparent, everyone on the internet may realize its existance, people are blocked from several websites in a black list, and the primary circuit router will always tracing several sensitive words, and judge the accessibility of your request.
-In this case people still can reach those stuff via VPN tools. And https will in most cases protect your data in transmission, except when Man-in-middle and TLS certificates spoofing attack happens.
+For people in China, when it comes to our proud GFW, problems are really apparent, everyone on the internet may realize its existence, people are blocked from several websites in a black list, and the primary circuit router will always tracing several sensitive words, and judge the accessibility of your request. In this case people still can reach those stuff via VPN tools. And https will in most cases protect your data in transmission, except when Man-in-middle and TLS certificates spoofing attack happens.
 
 This is a privacy domain problem which fits for the three ideas we mentioned above.
 
-### NSA PRISM
+What about NSA? NSA will be tracing your communication through different ways, people were not realizing it when they don't make anything attracting NSA’s attention. Only after Snowden publish the PRISM, common people start to realize the problem. One of the consequences of the Edward Snowden story is a heightened discussion about the importance of privacy - in particular when or if privacy should be traded off in order to combat terrorism.
 
-![NSA](https://www.eff.org/files/2013/12/24/nsa-action-1.png)
+This happens not meeting any of the three common sense for most people but will definitely affect Journalists and Activists. Without good journalists people can't understand what is really happening and thus can’t cast a meaningful vote. Activists who seem fringe now, may lead us to changes that are self-evident in a few generations.
 
-What about NSA? NSA will be tracing your communication through different ways, people were not realizing it when they don't make anything attacting NSA's attention. Only after Snowden publish the PRISM, common people start to realize the problem. One of the consequences of the Edward Snowden story is a heightened discussion about the importance of privacy - in particular when or if privacy should be traded off in order to combat terrorism.
+###Privacy Crisis
 
-This happens not meeting any of the three common sense for most people but will definitely affect Journalists and Activists. Without good journalists people can't understand what is really happening and thus can't cast a meaningful vote. Activists who seem fringe now, may lead us to changes that are self-evident in a few generations.
+After the stories came into people’s horizon, there have been a lot of activities taken around the world. Though privacy awareness and technology are growing, the way of tracing is also growing. TLS/SSL, OpenPGP and RTP are the most common seen techs,which are used to protect privacy and also regular security in business. OWASP is providing a way to audit a web system. And Threat Modeling is now becoming most popular tool to analyze security stuff.
 
-### Privacy Crisis
+###heart bleed bugthe logjam attack
 
-After the stories came into people's horizon, there have been a lot of activities taken around the world. Though privacy awareness and technology are growing, the way of tracing is also growing. TLS/SSL, OpenPGP and RTP are the most common seen techs,which are used to protect privacy and also regular security in business. OWASP is providing a way to audit a web system. And Threat Modeling is now becoming most popular tool to analyze security stuff.
-
-![the logjam attack](https://www.netskope.com/wp-content/uploads/2015/05/logjam2.png)
-![heart bleed bug](http://heartbleed.com/heartbleed.png)
-
-Though these techs and tools are helping us in different perspective, there can still be weak points. Besides, the performace of system will usually be influenced by cryptography and more consuming protocols. Complexity is another enemy to security. Fatal issues like heartbleed and logjam are kept discovered these years, And thus, such kind of security problem will surely lead to big privacy issue one day if it's not fixed quickly.
+Though these techs and tools are helping us in different perspective, there can still be weak points. Besides, the performance of system will usually be influenced by cryptography and more consuming protocols. Complexity is another enemy to security. Fatal issues like heartbleed and logjam are kept discovered these years, And thus, such kind of security problem will surely lead to big privacy issue one day if it’s not fixed quickly.
