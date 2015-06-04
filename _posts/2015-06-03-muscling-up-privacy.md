@@ -31,7 +31,7 @@ The more insidious problem in the subject of anonymity privacy is not so much wh
 No, but partially yes. In-browser cryptography has been a long-run debating. There are many implementation around cryptography in browser, supporting TLS is now a basic function for most browsers, and W3C is also promoting new features like [WebCryptoAPI](http://www.w3.org/TR/WebCryptoAPI/) for further usage. Though this draft is rolling out, not all specifics are implemented strongly, like CSPRNG. Having weak random numbers is a serious flaw in security, that would undo most of the value of encryption.
 
 The current issue around in-browser cryptography is not only the strongness of these cryptography implementations, but also the approach of Application Distribution.
-Scripts can be fetched and run on any place, if you provide all the key storage in browser, it will be dangerous to make cryptography tools run together with any other JavaScripts in same environment which may be injected or hijacked. TLS is not a insurance to solve this. Browser extension has better policy to verify your application digest hash. But in this case, people will not be able to enjoy the benefits of realtime web application distributions.
+Scripts can be fetched and run on any place, if you provide all the key storage in browser, it will be dangerous to make cryptography tools run together with any other JavaScripts in same environment which may be injected or hijacked. TLS is not an insurance to solve it. Browser extension has better policy to verify your application digest hash. But in this case, people will not be able to enjoy the benefits of realtime web application distributions.
 
 ### Privacy is hidden but your code should not.
 
