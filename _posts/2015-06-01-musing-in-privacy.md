@@ -5,25 +5,26 @@ layout: post
 ---
 
 
+
 ##Why you should care about privacy
 
 While we are making decision to contribute to privacy tools like Enigmail/GnuPG, the idea comes from our enthusiasts but not from common people, who are possibly ignoring their privacy safety, or even their privacy’s value.
 
 ###Common sense
 
-Ask yourself the reason for privacy caring. I’m coming up with several items which may fits to most people.
+Ask yourself the reason for caring about privacy. I've come up with several items which may fit most people.
 
 1. I’m doing secret things, which I don't want you to know.
-2. I’m sending out messages to someone, which I don't want others to spy.
-3. You are trusting me as who I am, that I don't want others to pretend.
+2. I’m sending out messages to someone, which I don't want others to spy on.
+3. I'm trusted by others as who I am, so I don't want others to steal my identity.
 
 ###Conflicts
 
 And ask yourself the reason for making a thing public, then you can find something conflict.
 
-1. I’m doing public things, which I don't want you to know who did it.
+1. I’m doing public things, but I don't want people to know who did it.
 2. I’m sending out messages to someone, which also want others authorized to read if necessary.
-3. You are trusting me as who I am, which can be delegated by my trusted agencies.
+3. I'm trusted by others as who I am, but my actions can be delegated by trusted agencies.
 
 ###Extra thoughts
 
