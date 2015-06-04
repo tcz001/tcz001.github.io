@@ -36,6 +36,10 @@ There are extra thoughts we may miss above, don’t be selfish.
 
 You are traced in a bunch of channels, some you may find, some you may not realize.
 
+###Advertising
+
+No matter where you go on the Internet you will see advertisements. Thanks to company like Google, the network is becoming so flourishing as it is, though the Advertising is the biggest benefit to business world, it also helps people to get wanted infomation of goods, sometimes.
+
 ###Great Firewall
 
 For people in China, when it comes to our proud GFW, problems are really apparent, everyone on the internet may realize its existence, people are blocked from several websites in a black list, and the primary circuit router will always tracing several sensitive words, and judge the accessibility of your request. In this case people still can reach those stuff via VPN tools. And https will in most cases protect your data in transmission, except when Man-in-middle and TLS certificates spoofing attack happens.
