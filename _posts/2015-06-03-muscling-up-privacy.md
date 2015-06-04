@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: "STRIKE-Muscling up Privacy"
 layout: post
 ---
