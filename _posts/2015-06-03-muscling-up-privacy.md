@@ -14,3 +14,5 @@ It's quite urgent issue of the time being. So STRIKE team is mainly up to bring 
 ### Privacy does not equal to Security
 
 ### Is browser safe enough to do cryptography?
+
+### Don't treat privacy as an easy-hard issue
