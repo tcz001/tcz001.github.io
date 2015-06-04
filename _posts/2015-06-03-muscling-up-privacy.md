@@ -7,7 +7,7 @@ layout: post
 
 ## Do less make more, do more make less
 
-Software is a thing that always conflict but effective as it is. When it comes to privacy tools, it seems like a encumbrance on most softwares. If you are using [OpenPGP](http://www.openpgp.org/) based tool (like [Enigmail](https://www.enigmail.net)) to manage you sensitive messages, you will always struggling about its antihuman-like apis. You will even have to understand the keystructure, symmetric/asymmetric cryptography and even the whole protocol specifications, so that you can get the idea of "Now, I'm really safe."
+Software is a thing that always conflict but effective as it is. When it comes to privacy tools, it seems like a encumbrance on most softwares. If you are using [OpenPGP](http://www.openpgp.org/) based tool (like [Enigmail](https://www.enigmail.net)) to manage you sensitive messages, you will always struggling about its antihuman-like apis. You will even have to understand (here's a [cartoon](https://www.powtoon.com/show/gmd6oEQEY8q/pgp-basics/) may help you understand more easily) the keystructure, symmetric/asymmetric cryptography and even the whole protocol specifications, so that you can get the idea of "Now, I'm really safe."
 
 It's quite urgent issue for the time being, thus now STRIKE team is mainly up to bring better experience for these tools.
 
