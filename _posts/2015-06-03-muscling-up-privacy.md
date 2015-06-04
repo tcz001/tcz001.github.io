@@ -34,6 +34,8 @@ The current issue around in-browser cryptography is not only the strongness of t
 
 Scripts can be fetched and run on any place, if you provide all the key storage in browser, it will be dangerous to make cryptography tools run together with any other JavaScripts in same environment which may be injected or hijacked. TLS is not an insurance to solve it. Browser extension has better policy to verify your application digest hash. But in this case, people will not be able to enjoy the benefits of realtime web application delivery.
 
+If interested about this issue, you may as well like the challenge game [keys-to-kingdom](http://koto.github.io/blog-kotowicz-net-examples/keys-to-kingdom/)
+
 But we still hope browser and web technology can reach the Avalon someday. But right now, think about some other workaround rather than doing it in web.
 
 ### Privacy is hidden but your code should not.
