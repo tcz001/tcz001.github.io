@@ -44,7 +44,7 @@ No matter where you go on the Internet you will see advertisements. Thanks to co
 
 For people in China, when it comes to our proud GFW, problems are really apparent, everyone on the internet may realize its existence, people are blocked from several websites in a black list, and the primary circuit router will always tracing several sensitive words, and judge the accessibility of your request. In this case people still can reach those stuff via VPN tools. And https will in most cases protect your data in transmission, except when Man-in-middle and TLS certificates spoofing attack happens.
 
-This is a privacy domain problem which fits for the three ideas we mentioned above.
+This is a privacy domain problem which fits for all the three ideas we mentioned above.
 
 ###NSA PRISM
 
