@@ -7,6 +7,7 @@ layout: post
 
 
 
+
 ## Do less make more, do more make less
 
 Software is a thing that always conflict but effective as it is. When it comes to privacy tools, it seems like a encumbrance on most softwares. If you are using [OpenPGP](http://www.openpgp.org/) based tool (like [Enigmail](https://www.enigmail.net)) to manage you sensitive messages, you will always struggling about its antihuman-like apis. You will even have to understand (here's a [cartoon](https://www.powtoon.com/show/gmd6oEQEY8q/pgp-basics/) may help you understand more easily) the keystructure, symmetric/asymmetric cryptography and even the whole protocol specifications, so that you can get the idea of "Now, I'm really safe."
@@ -38,6 +39,16 @@ If interested about this issue, you may as well like the challenge game [keys-to
 
 But we still hope browser and web technology can reach the Avalon someday. But right now, think about some other workaround rather than doing it in web.
 
-### Privacy is hidden but your code should not.
+### It's none the better for hiding your code
 
-Trust comes from honest, and vise versa
+Trust comes from honesty, and vise versa.
+
+There are some misunderstanding against the code security, while you're using a cryptography, the algorithm, protocol, or implementation should not be hidden, only your keys are secret. This is becoming a necessary principal for more audit insights.
+
+As mentioned in kerckhoff's principle "A cryptosystem​ should be secure even if everything about the system, except the key, is public knowledge." Your binary applications can even be decompiled and a private algorithm is usually not reviewed enough in different cases, that's why sourcecode-leak assumption has been emphasised in Threat Modeling, but the keys are stronger and proved by mathematics.
+
+So considering using a well organized public cryptosystem will be a good practice instead of relying on your secret codebase.
+
+
+
+While it's  been more and more urgent requirement which was ignored much before. It would be quite awesome and helpful seeing more people realize the importance of privacy, and also understand it correctly, or even participate from both company and customer sides. Make your voice part of them if you care.
