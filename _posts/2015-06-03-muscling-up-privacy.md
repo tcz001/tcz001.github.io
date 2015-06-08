@@ -8,6 +8,7 @@ layout: post
 
 
 
+
 ## Do less make more, do more make less
 
 Software is a thing that always conflict but effective as it is. When it comes to privacy tools, it seems like a encumbrance on most softwares. If you are using [OpenPGP](http://www.openpgp.org/) based tool (like [Enigmail](https://www.enigmail.net)) to manage you sensitive messages, you will always struggling about its antihuman-like apis. You will even have to understand (here's a [cartoon](https://www.powtoon.com/show/gmd6oEQEY8q/pgp-basics/) may help you understand more easily) the keystructure, symmetric/asymmetric cryptography and even the whole protocol specifications, so that you can get the idea of "Now, I'm really safe."
@@ -46,6 +47,13 @@ Trust comes from honesty, and vise versa.
 There are some misunderstanding against the code security, while you're using a cryptography, the algorithm, protocol, or implementation should not be hidden, only your keys are secret. This is becoming a necessary principal for more audit insights.
 
 As mentioned in kerckhoff's principle "A cryptosystem​ should be secure even if everything about the system, except the key, is public knowledge." Your binary applications can even be decompiled and a private algorithm is usually not reviewed enough in different cases, that's why sourcecode-leak assumption has been emphasised in Threat Modeling, but the keys are stronger and proved by mathematics.
+
+Some arguments which are in favor of this principal
+- easier to keep secret key than secret algorithm
+- easier to change key than to change algorithm
+- standardization
+	- ease of deployment
+	- public validation
 
 So considering using a well organized public cryptosystem will be a good practice instead of relying on your secret codebase.
 
