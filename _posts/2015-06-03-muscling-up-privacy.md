@@ -48,7 +48,8 @@ There are some misunderstanding against the code security, while you're using a 
 
 As mentioned in kerckhoff's principle "A cryptosystem​ should be secure even if everything about the system, except the key, is public knowledge." Your binary applications can even be decompiled and a private algorithm is usually not reviewed enough in different cases, that's why sourcecode-leak assumption has been emphasised in Threat Modeling, but the keys are stronger and proved by mathematics.
 
-Some arguments which are in favor of this principal
+Some arguments which are in favor of this principal:
+
 - easier to keep secret key than secret algorithm
 - easier to change key than to change algorithm
 - standardization
