@@ -1,8 +1,9 @@
 ---
-published: false
+published: true
 title: get my blog
 layout: post
 ---
+
 
 ## A New Post
 doubanclaim96bded4fd8a59bc0
