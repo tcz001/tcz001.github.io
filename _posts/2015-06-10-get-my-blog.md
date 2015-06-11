@@ -1,0 +1,9 @@
+---
+published: false
+title: get my blog
+layout: post
+---
+
+## A New Post
+doubanclaim96bded4fd8a59bc0
+Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
