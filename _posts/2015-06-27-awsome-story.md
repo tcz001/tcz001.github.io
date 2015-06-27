@@ -64,7 +64,7 @@ why it's not safe:
     
 ![pseudo-randomness](https://photos-1.dropbox.com/t/2/AAARMsZJz67sbH2RJVVAMEaf7eio64Q0PqnEMKPm-L-2rQ/12/322637170/png/32x32/1/_/1/2/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202015-06-26%2011.28.10.png/CPKa7JkBIAEgAiADIAQgBSAGIAcoAg/nVkRYNcljScxPp3RQ-KIfUB_VbS-hV1NcZBaX7GSgOE?size=1280x960&size_mode=2)
 
-    The image on the right is how the image might appear encrypted with CBC, CTR or any of the other more secure modes—indistinguishable from random noise. Note that the random appearance of the image on the right does not ensure that the image has been securely encrypted; many kinds of insecure encryption have been developed which would produce output just as "random-looking".
+> The image on the right is how the image might appear encrypted with CBC, CTR or any of the other more secure modes—indistinguishable from random noise. Note that the random appearance of the image on the right does not ensure that the image has been securely encrypted; many kinds of insecure encryption have been developed which would produce output just as "random-looking".
 
 ###Chained block mode CBC
 
