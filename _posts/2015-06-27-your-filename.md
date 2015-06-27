@@ -1,7 +1,9 @@
 ---
-published: true
+published: false
 title: "STRIKE-AwESome"
 layout: post
+tags: 
+  - hacker
 ---
 
 
