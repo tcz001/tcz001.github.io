@@ -1,8 +1,9 @@
 ---
-published: false
+published: true
 title: "STRIKE-AwESome"
 layout: post
 ---
+
 
 #STRIKE GOes AwESome
 
