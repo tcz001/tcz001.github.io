@@ -62,7 +62,7 @@ When used in a block cipher mode of operation (CBC, ECB) makes them vulnerable t
 why it's not safe: 
     pseudo-randomness is a important principle for cryptography, it will enhence the protocol by making it hard to guess in a linear field of time.
     
-    [pseudo-randomness](https://www.dropbox.com/s/p3023qaqqff3lde/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202015-06-26%2011.28.10.png?dl=0)
+![pseudo-randomness](https://www.dropbox.com/s/p3023qaqqff3lde/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202015-06-26%2011.28.10.png?dl=0)
     
     The image on the right is how the image might appear encrypted with CBC, CTR or any of the other more secure modes—indistinguishable from random noise. Note that the random appearance of the image on the right does not ensure that the image has been securely encrypted; many kinds of insecure encryption have been developed which would produce output just as "random-looking".
 
