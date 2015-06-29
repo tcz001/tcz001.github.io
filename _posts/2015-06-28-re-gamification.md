@@ -4,7 +4,7 @@ title: "Re-Gamification"
 layout: post
 ---
 
-### 游戏化到底有什么用
+## 游戏化到底有什么用
 
 之前的某个周六和fxp007聊了一下午，从一个基本的基于地理位置的产品构思，到startup成长过程中可能遇到的问题，很少有机会和创业圈的朋友进行如此深入的交流，老实说从讨论结果来看，我也开始意识到TW本身的一些问题。
 
@@ -40,10 +40,12 @@ Poster是敏捷的一项gamification创新，一些看似平常的贴纸，再�
 ## 重审游戏化
 
 游戏化标志着日常生活的重大改变。它通过游戏元素描述了经济，政治和社会环境，如奖励、规则结构、措施等元素都受启发于游戏，不论是电脑游戏、桌游、卡牌还是诸如此类的例子，都折射出游戏化的某些原则。设计一种游戏化的规章制度，包含了和设计一款游戏一样的方方面面。相关的研究也是一个热点。
-
-[!rethinking gamification](http://gamification-research.org/2014/06/edited-volume-rethinking-gamification-out/)
+在
+![rethinking gamification](http://gamification-research.org/2014/06/edited-volume-rethinking-gamification-out/)
 
 ### 重置行为
+
+
 
 ### 重现历史
 
