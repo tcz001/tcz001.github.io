@@ -1,8 +1,9 @@
 ---
-published: false
+published: true
 title: "Re-Gamification"
 layout: post
 ---
+
 
 ## 重审游戏化
 
