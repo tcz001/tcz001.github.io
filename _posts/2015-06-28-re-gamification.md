@@ -63,9 +63,10 @@ Bitcoin的出现旨在为计算资源提供一个计量单位，虽然一度成�
 
 ### 重用对立思维
 
-要说Uber和滴滴专车的区别，从乘客来说或许很少有人能完全区分开来，同质化的服务却有着不同的市场效果。重用对立思维，指的是“利用已有模式”的同时，“从另一个方面考虑”，这个技巧常常被忽视。通过区分“服务商”来细化“目标市场”，就是Uber和滴滴专车所采取的错位竞争方式。
+要说Uber和滴滴专车的区别，从乘客来说或许很少有人能完全区分开来，同质化的服务却有着不同的市场效果。重用对立思维，指的是“利用已有模式”的同时，“从另一个方面考虑”，这个技巧常常被忽视。通过区分“服务商”来细化“目标市场”，同时又把原本的目标市场转化成更细粒度的服务商和消费者，就是Uber和滴滴专车所采取的错位竞争方式。
 
 ### 重塑设计
 
 ![reCAPTCHA](https://eventespresso.com/wp-content/uploads/2012/08/smallCaptchaSpaceWithRoughAlpha.png)
-如果你曾经在某些网站上看到这样一种验证码，并且为之头疼得把非常难认的内容从图片里读出来，那么恭喜你，你为古籍翻译做出了贡献。验证码公司reCAPTCHA在09年被Google收购，该服务不仅可以反spam，而且同时还可以帮助进行古籍的数字化工作。在[Exploring the Endgame of Gamification](http://projects.digital-cultures.net/gamification/files/2013/05/Scott-Nicholson-_-rethinking-gamification.pdf)一文中提到MMORPG中存在的残局概念，是指对已被判死亡的玩家在剩余游戏时间内的价值。这一点在网游中被广泛使用，用于保证玩家的在线时间，同时也能通过更多新奇的玩法。而
+
+如果你曾经在某些网站上看到这样一种验证码，并且为之头疼得把非常难认的内容从图片里读出来，那么恭喜你，你为古籍翻译做出了贡献。验证码公司reCAPTCHA在09年被Google收购，该服务不仅可以反spam，而且同时还可以帮助进行古籍的数字化工作。在[Exploring the Endgame of Gamification](http://projects.digital-cultures.net/gamification/files/2013/05/Scott-Nicholson-_-rethinking-gamification.pdf)一文中提到MMORPG中存在的残局概念，是指对已被判死亡的玩家在剩余游戏时间内的价值。这一点在网游中被广泛使用，用于保证玩家的在线时间，同时也能通过更多新奇的玩法。而reCAPTCHA也采用了这样一种方式，重新设计了验证码的内容，将一段计算机生成的较容易识别的验证码与古籍中很难识别的文字组合起来，之后Google还将其应用到谷歌街景的门牌与路标识别里，可谓众包OCR的一个伟大创新。
