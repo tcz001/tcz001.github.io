@@ -1,10 +1,11 @@
 ---
 published: true
-title: Gamification 游戏化
+title: Gamification
 layout: post
 tags: 
   - hacker
 ---
+
 
 
 ## 游戏化到底有什么用
