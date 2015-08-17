@@ -61,7 +61,7 @@ type SMPContext struct{
 
 或许你会觉得在使用上这两段代码并没有什么不同，但事实上当你无法阻止开发中类型增加，一旦产生了歧义和循环调用，事情就变得复杂起来了，例如你需要令SMPContext也拥有一个独立的version，将原本version的相关调用与新的version属性区分开来将会变成一个痛苦的过程。
 
-### Array param copy
+### Take care of pointer copy
 
 在Java中你或许已经养成了习惯，每个参数都会被作为引用而传入，并且使用段首的final进行拷贝，那么在golang中，你就需要换一个思路看待这个问题了，一段数组或是一个结构，都是以拷贝传入的，而指针或是slice都可以作为参数传入。
 
