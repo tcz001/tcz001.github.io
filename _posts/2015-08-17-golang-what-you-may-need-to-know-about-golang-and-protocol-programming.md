@@ -96,4 +96,4 @@ func main() {
     fmt.Println(a.bs) //a.bs == []byte{}
 }
 ```
-
+如果你不希望释放对象a内的数据，那么
