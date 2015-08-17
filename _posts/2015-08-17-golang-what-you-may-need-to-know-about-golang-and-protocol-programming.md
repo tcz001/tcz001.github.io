@@ -29,12 +29,12 @@ Embedding是个经常被误解的特性，举个OTR中的现实例子
 
 ```
 type Coversation struct{
-	version
     AKEContext
     SMPContext
 }
 type AKEContext struct{
-	...
+	version
+    ...
 }
 type SMPContext struct{
 	...
@@ -45,11 +45,11 @@ type SMPContext struct{
 
 ```
 type Coversation struct{
-	version version
     akeContext AKEContext
     smpContext SMPContext
 }
 type AKEContext struct{
+	version version
 	Coversation *Coversation
     ...
 }
@@ -59,4 +59,6 @@ type SMPContext struct{
 }
 ```
 
-或许你会觉得在使用上与下面的代码并没有什么不同，但事实上当你无法阻止开发中类型增加，一旦产生了歧义和循环调用，事情就变得复杂起来了
+或许你会觉得在使用上这两段代码并没有什么不同，但事实上当你无法阻止开发中类型增加，一旦产生了歧义和循环调用，事情就变得复杂起来了，例如你需要令SMPContext也拥有一个独立的version，将原本version的相关调用与新的version属性区分开来将会变成一个痛苦的过程。
+
+
