@@ -20,7 +20,8 @@ docker、etcd、raft、nsq、，尽管go并不是万金油，但是作为一门�
 
 ## 说这么多，那到底我需要知道什么？
 
-首先是几个反模式，我们经常在golang中遇到的特性误解。
+一些常见问题，在golang的FAQ中已经被解释过了，https://golang.org/doc/faq
+下面就谈谈我们经常在golang中遇到的特性误解。
 
 ### Embedding abuse
 
@@ -101,4 +102,4 @@ func main() {
 
 另外每次进行传指针操作后，dereference也需要一定开销，因此对于小对象，从性能优化的角度出发，了解pointer的运作方式是非常重要的。
 
-### When to use goblock
+### When to use goroutines and when to use thread
