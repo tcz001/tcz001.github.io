@@ -2,10 +2,12 @@
 categories: ""
 layout: post
 splash: ""
-tags: null
+tags: 
+  - "null"
 published: false
 title: "Golang-What you may need to know about Golang in Protocol Programming"
 ---
+
 
 ## 从何谈起？
 
@@ -42,7 +44,9 @@ type SMPContext struct{
 }
 ```
 
-重构后：
+或许你会觉得在使用方面，这段代码并没有什么问题，但事实上当你无法阻止开发中类型增加，一旦产生了歧义和循环调用，事情就变得复杂起来了，例如你需要令SMPContext也拥有一个独立的version，将原本version的相关调用与新的version属性区分开来将会变成一个痛苦的过程。
+
+重构后，使用显性的调用，尽管增加了代码长度，但是却消除了歧义性：
 
 ```
 type Coversation struct{
@@ -59,8 +63,6 @@ type SMPContext struct{
     ...
 }
 ```
-
-或许你会觉得在使用上这两段代码并没有什么不同，但事实上当你无法阻止开发中类型增加，一旦产生了歧义和循环调用，事情就变得复杂起来了，例如你需要令SMPContext也拥有一个独立的version，将原本version的相关调用与新的version属性区分开来将会变成一个痛苦的过程。
 
 ### Take care of pointer copy
 
