@@ -20,7 +20,7 @@ docker、etcd、raft、nsq、，尽管go并不是万金油，但是作为一门�
 
 ## 说这么多，那到底我需要知道什么？
 
-一些常见问题，在golang的FAQ中已经被解释过了，https://golang.org/doc/faq
+一些常见问题，在golang的[FAQ](https://golang.org/doc/faq)中已经被解释过了，
 下面就谈谈我们经常在golang中遇到的特性误解。
 
 ### Embedding abuse
