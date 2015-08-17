@@ -98,3 +98,7 @@ func main() {
 ```
 
 如果你不希望释放对象a内的数据，那么这里的`b := a.bs`就应该替换为`b:=make([]byte,len(a.bs)); copy(b[:],a.bs)`
+
+另外每次进行传指针操作后，dereference也需要一定开销，因此对于小对象，从性能优化的角度出发，了解pointer的运作方式是非常重要的。
+
+### When to use goblock
