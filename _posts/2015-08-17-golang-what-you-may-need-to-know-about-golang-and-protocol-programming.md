@@ -72,16 +72,28 @@ bar(arr[:])
 ```
 
 看似相同，但前者是immutable后者是mutable的函数调用。
-在OTR中，我们需要实现一个wipe out功能，确保内存会被释放，于是就有了下面的代码：
+在OTR中，我们需要实现一个wipe out特性，确保内存会被清空且释放，于是就有了下面的代码：
 
 ```
-type message struct{
-	content
-}
-func wipe(bs []byte){
-	bs := nil
+type foo struct {
+    bs []byte
 }
 
-fmt.Println(bs)
+func zeroes(n int) []byte {
+    return make([]byte, n)
+}
+
+func wipeBytes(b []byte) {
+    copy(b, zeroes(len(b)))
+}
+
+
+func main() {
+    a := foo{bs: []byte{0x01, 0x02}}
+    b := a.bs
+    wipeBytes(b)
+    fmt.Println(b)    //b == []byte{}
+    fmt.Println(a.bs) //a.bs == []byte{}
+}
 ```
 
