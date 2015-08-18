@@ -61,75 +61,67 @@ Golint和GoDoc可以作为接口审查的工具，通过阅读自动生成的GoD
 Embedding是个经常被误解的特性，举个OTR3中的现实例子
 原本的Context拥有三层embedding，
 
-```
-type Coversation struct{
-    AKEContext
-    SMPContext
-}
-type AKEContext struct{
-	version
-    ...
-}
-type SMPContext struct{
-	...
-}
-```
+        type Coversation struct{
+            AKEContext
+            SMPContext
+        }
+        type AKEContext struct{
+            version
+            ...
+        }
+        type SMPContext struct{
+            ...
+        }
 
 或许你会觉得在使用方面，这段代码并没有什么问题，但事实上当你无法阻止开发中类型增加，一旦产生了歧义和循环调用，事情就变得复杂起来了，例如你需要令SMPContext也拥有一个独立的version，将原本version的相关调用与新的version属性区分开来将会变成一个痛苦的过程。
 
 重构后，使用显性的调用，尽管增加了代码长度，但是却消除了歧义性：
 
-```
-type Coversation struct{
-    akeContext AKEContext
-    smpContext SMPContext
-}
-type AKEContext struct{
-	version version
-	Coversation *Coversation
-    ...
-}
-type SMPContext struct{
-	Coversation *Coversation
-    ...
-}
-```
+        type Coversation struct{
+            akeContext AKEContext
+            smpContext SMPContext
+        }
+        type AKEContext struct{
+            version version
+            Coversation *Coversation
+            ...
+        }
+        type SMPContext struct{
+            Coversation *Coversation
+            ...
+        }
 
 ### Take care of pointer copy
 
 在Java中你或许已经养成了习惯，每个参数都会被作为引用而传入，并且使用段首的final进行拷贝，那么在golang中，你就需要换一个思路看待这个问题了，一段数组或是一个结构，都是以拷贝传入的，而指针或是slice都可以作为参数传入，或是用作右值。
 
-```
-var arr []byte
-foo(arr)
-bar(arr[:])
-```
+        var arr []byte
+        foo(arr)
+        bar(arr[:])
 
 看似相同，但前者是immutable后者是mutable的函数调用。
 在OTR3中，我们需要实现一个wipe out特性，确保内存会被清空且释放，于是就有了下面的代码：
 
-```
-type foo struct {
-    bs []byte
-}
-
-func zeroes(n int) []byte {
-    return make([]byte, n)
-}
-
-func wipeBytes(b []byte) {
-    copy(b, zeroes(len(b)))
-}
-
-
-func main() {
-    a := foo{bs: []byte{0x01, 0x02}}
-    b := a.bs
-    wipeBytes(b)
-    fmt.Println(b)    //b == []byte{}
-    fmt.Println(a.bs) //a.bs == []byte{}
-}
-```
+        type foo struct {
+            bs []byte
+        }
+        
+        func zeroes(n int) []byte {
+            return make([]byte, n)
+        }
+        
+        func wipeBytes(b []byte) {
+            copy(b, zeroes(len(b)))
+        }
+        
+        
+        func main() {
+            a := foo{bs: []byte{0x01, 0x02}}
+            b := a.bs
+            wipeBytes(b)
+            fmt.Println(b)    //b == []byte{}
+            fmt.Println(a.bs) //a.bs == []byte{}
+        }
 
 如果你不希望释放对象a内的数据，那么这里的`b := a.bs`就应该替换为`b:=make([]byte,len(a.bs)); copy(b[:],a.bs)`
 
