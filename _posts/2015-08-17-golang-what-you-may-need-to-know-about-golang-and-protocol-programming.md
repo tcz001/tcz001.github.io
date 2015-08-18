@@ -5,7 +5,7 @@ splash: ""
 tags: 
   - "null"
 published: true
-title: "Golang-Seven weeks Seven tips in Golang for Message protocol"
+title: "Seven weeks - Seven tips in Golang for Message protocol"
 ---
 
 
