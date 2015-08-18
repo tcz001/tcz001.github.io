@@ -13,7 +13,8 @@ title: "Golang-Seven weeks Seven tips in Golang for Message protocol"
 ## 从何谈起？
 
 Golang是一门设计很“简约”的语言（尤其与其竞争对手c++相比），编译强类型语言+运行时垃圾回收，没有内建繁芜的函数式特性，总的来说，它适用的场景从最火热的几个杀手级项目就可以看出一些端倪了。
-docker、etcd、raft、nsq、，尽管go并不是万金油，但是作为一门系统级语言，简单的指针操作，原生的gc与并发（Concurrency）支持，拥有编译时类型校验与安全的内存模型，无不使得这个小地鼠（Gopher）显得又Q又犀利。
+
+docker、etcd、raft、nsq，尽管go并不是万金油，但是作为一门系统级语言，简单的指针操作，原生的gc与并发（Concurrency）支持，拥有编译时类型校验与安全的内存模型，无不使得这个小地鼠（Gopher）显得又Q又犀利。
 
 而STRIKE team，~~在饱尝Enigmail中使用JavaScript进行安全应用开发的痛苦体验后~~，选择Go作为隐私消息协议OTR3的开发平台，如果你想了解OTR3本身请参考[repo](https://github.com/twstrike/otr3)，是看中了Go下面几点特性：
 - 性能接近C语言
@@ -29,13 +30,27 @@ docker、etcd、raft、nsq、，尽管go并不是万金油，但是作为一门�
 ### Refactor GoPath first
 
 非常多的go项目，并没有很好地组织成best structure，在项目的初期，我们定义了独立的GOPATH环境变量，把项目和全局gopath分离开来，这样的简单方式给维护多个引用package带来了一些麻烦，由于OTR3是一个面向otr协议的version 3实现，我们需要额外实现一个compat package，无法通过直接修改workspace来实时测试新的功能，必须push到master分支才能解决外部依赖：
+
 简言之：coding -> test -> **push** -> test exteral applications
+
 这样的开发流程，在push环节中被大大限制住了，而对于这样的情况，单纯倚靠symbol link来组织多个代码库又显得非常脏，所以我们打算在接下来的开发中采用godeps解决vendor依赖。
+
+GoDeps可以将workspace与test vendor分离开来，并且提供了类似ruby下bundle的依赖环境工具。
 
 ### Imports and Exports
 
 由于Golang简约设计的原则限制，一个松耦合简单API的package应当在初期就设计好，否则在项目后期大量的Exported function会导致难以判断接口的必要性，介于compat package的存在，我们不得不做出了一些妥协。但是由于otr是一个协议lib而非app，严格地设计接口是非常有必要且必须先行考虑的事情。
+
 Golint和GoDoc可以作为接口审查的工具，通过阅读自动生成的GoDoc就可以检查接口暴露的情况，例如[compat](https://godoc.org/github.com/twstrike/otr3/compat),[otr3](https://godoc.org/github.com/twstrike/otr3)比较两份文档的export接口数量，以及是否有type并不需要暴露到包外，都可以直观地阅读出来。
+
+它可以在你的目录下生成如下结构的Godeps文件夹，其中Godeps可以帮助你跟踪依赖的改变情况，同时可以使用`godep go test ./...`来跑测试。
+
+```
+Godeps
+├── Godeps.json
+├── Readme
+└── _workspace
+```
 
 ### Embedding abuse
 
