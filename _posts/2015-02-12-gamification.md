@@ -1,10 +1,13 @@
 ---
 published: true
-title: Gamification
+title: "Gamo-Gamification"
 layout: post
 tags: 
   - hacker
+categories: ""
+splash: ""
 ---
+
 
 
 
