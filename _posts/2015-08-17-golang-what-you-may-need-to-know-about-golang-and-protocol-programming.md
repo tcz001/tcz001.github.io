@@ -104,4 +104,8 @@ func main() {
 
 另外每次进行传指针操作后，dereference也需要一定开销，因此对于小对象，从性能优化的角度出发，了解pointer的运作方式是非常必要的。
 
-### When to use goroutines and when to use thread
+### When to use goroutines and when to use defer
+
+Goroutine是golang提供的IOC channel，也可以称作一种implicitly coroutine，在runtime中用来替代多线程异步编程中繁琐的同步机制。
+
+defer常常被误认为一种异步调用模式，然而只有在defer作用于异步goroutine时才能发挥异步作用。
