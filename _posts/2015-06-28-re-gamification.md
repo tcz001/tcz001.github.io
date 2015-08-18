@@ -1,8 +1,13 @@
 ---
 published: true
-title: "Re-Gamification"
+title: "Gamo-ReGamification"
 layout: post
+categories: ""
+splash: ""
+tags: 
+  - hacker
 ---
+
 
 
 
