@@ -3,7 +3,7 @@ categories: ""
 layout: post
 splash: ""
 tags: 
-  - "null"
+  - hacker
 published: true
 title: "Seven weeks-Seven tips in Golang for Message protocol"
 ---
