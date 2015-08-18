@@ -5,7 +5,7 @@ splash: ""
 tags: 
   - "null"
 published: false
-title: "Golang-Seven weeks Seven tips in Golang for message protocol"
+title: "Golang-Seven weeks Seven tips in Golang for Message protocol"
 ---
 
 
@@ -15,7 +15,7 @@ title: "Golang-Seven weeks Seven tips in Golang for message protocol"
 Golang是一门设计很“简约”的语言（尤其与其竞争对手c++相比），编译强类型语言+运行时垃圾回收，没有内建繁芜的函数式特性，总的来说，它适用的场景从最火热的几个杀手级项目就可以看出一些端倪了。
 docker、etcd、raft、nsq、，尽管go并不是万金油，但是作为一门系统级语言，简单的指针操作，原生的gc与并发（Concurrency）支持，拥有编译时类型校验与安全的内存模型，无不使得这个小地鼠（Gopher）显得犀利又可爱。
 
-而STRIKE team，在饱尝Enigmail中使用JavaScript进行安全应用开发的痛苦体验后，选择Go作为隐私消息协议OTR的开发平台[1]，主要也是看重了下面几点：
+而STRIKE team，在饱尝Enigmail中使用JavaScript进行安全应用开发的痛苦体验后，选择Go作为隐私消息协议OTR3的开发平台，如果你想了解OTR3本身请参考[repo](https://github.com/twstrike/otr3)，是看中了下面几点：
 - 性能接近C语言
 - 内存安全，强类型
 - 系统与网络层的大量应用
@@ -24,11 +24,22 @@ docker、etcd、raft、nsq、，尽管go并不是万金油，但是作为一门�
 ## 说这么多，那到底我需要知道什么？
 
 一些常见问题，在golang的[FAQ](https://golang.org/doc/faq)中已经被解释过了，
-下面就谈谈我们经常在golang中遇到的特性误解。
+下面就谈谈这七周开发中总结的七个容易被忽略的点。
+
+### Refactor GoPath first
+
+非常多的go项目，并没有很好地组织成best structure，在项目的初期，我们定义了独立的GOPATH环境变量，把项目和全局gopath分离开来，这样的简单方式给维护多个引用package带来了一些麻烦，由于OTR3是一个面向otr协议的version 3实现，我们需要额外实现一个compat package，无法通过直接修改workspace来实时测试新的功能，必须push到master分支才能解决外部依赖：
+简言之：coding -> test -> **push** -> test exteral applications
+这样的开发流程，在push环节中被大大限制住了，而对于这样的情况，单纯倚靠symbol link来组织多个代码库又显得非常脏，所以我们打算在接下来的开发中采用godeps解决vendor依赖。
+
+### Imports and Exports
+
+由于Golang简约设计的原则限制，一个松耦合简单API的package应当在初期就设计好，介于compat package的存在，我们不得不做出了一些妥协。但是由于otr是一个协议lib而非app，严格地设计接口是非常有必要且必须先行考虑的事情。
+Golint和GoDoc可以作为接口审查的工具，
 
 ### Embedding abuse
 
-Embedding是个经常被误解的特性，举个OTR中的现实例子
+Embedding是个经常被误解的特性，举个OTR3中的现实例子
 原本的Context拥有三层embedding，
 
 ```
@@ -76,7 +87,7 @@ bar(arr[:])
 ```
 
 看似相同，但前者是immutable后者是mutable的函数调用。
-在OTR中，我们需要实现一个wipe out特性，确保内存会被清空且释放，于是就有了下面的代码：
+在OTR3中，我们需要实现一个wipe out特性，确保内存会被清空且释放，于是就有了下面的代码：
 
 ```
 type foo struct {
@@ -115,6 +126,5 @@ Go与Erlang在并发设计上的最大不同，就是Erlang严格遵循了轻量
 
 另外defer也可能被误用作一种异步调用模式，然而只有在defer作用于异步goroutine时才能发挥异步作用，而他的真正含义更类似析构函数，强制将该语句放到代码片段的末尾执行而已。
 
+### 
 
-
-[1]如果你想了解OTR本身请参考Repo(https://github.com/twstrike/otr3)
