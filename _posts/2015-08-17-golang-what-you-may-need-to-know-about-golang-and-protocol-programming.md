@@ -43,12 +43,12 @@ GoDeps可以将workspace与test vendor分离开来，并且提供了类似ruby�
 
 通过`godep save ./...`可以在你的目录下生成如下结构的Godeps文件夹，其中Godeps可以帮助你跟踪依赖的改变情况，同时可以使用`godep go test ./...`来跑测试。
 
-```
-Godeps
-├── Godeps.json
-├── Readme
-└── _workspace
-```
+
+        Godeps
+        ├── Godeps.json
+        ├── Readme
+        └── _workspace
+
 
 ### Imports and Exports
 
