@@ -13,9 +13,9 @@ title: "Golang-Seven weeks Seven tips in Golang for Message protocol"
 ## 从何谈起？
 
 Golang是一门设计很“简约”的语言（尤其与其竞争对手c++相比），编译强类型语言+运行时垃圾回收，没有内建繁芜的函数式特性，总的来说，它适用的场景从最火热的几个杀手级项目就可以看出一些端倪了。
-docker、etcd、raft、nsq、，尽管go并不是万金油，但是作为一门系统级语言，简单的指针操作，原生的gc与并发（Concurrency）支持，拥有编译时类型校验与安全的内存模型，无不使得这个小地鼠（Gopher）显得犀利又可爱。
+docker、etcd、raft、nsq、，尽管go并不是万金油，但是作为一门系统级语言，简单的指针操作，原生的gc与并发（Concurrency）支持，拥有编译时类型校验与安全的内存模型，无不使得这个小地鼠（Gopher）显得又Q又犀利。
 
-而STRIKE team，在饱尝Enigmail中使用JavaScript进行安全应用开发的痛苦体验后，选择Go作为隐私消息协议OTR3的开发平台，如果你想了解OTR3本身请参考[repo](https://github.com/twstrike/otr3)，是看中了下面几点：
+而STRIKE team，~~在饱尝Enigmail中使用JavaScript进行安全应用开发的痛苦体验后~~，选择Go作为隐私消息协议OTR3的开发平台，如果你想了解OTR3本身请参考[repo](https://github.com/twstrike/otr3)，是看中了Go下面几点特性：
 - 性能接近C语言
 - 内存安全，强类型
 - 系统与网络层的大量应用
@@ -34,8 +34,8 @@ docker、etcd、raft、nsq、，尽管go并不是万金油，但是作为一门�
 
 ### Imports and Exports
 
-由于Golang简约设计的原则限制，一个松耦合简单API的package应当在初期就设计好，介于compat package的存在，我们不得不做出了一些妥协。但是由于otr是一个协议lib而非app，严格地设计接口是非常有必要且必须先行考虑的事情。
-Golint和GoDoc可以作为接口审查的工具，
+由于Golang简约设计的原则限制，一个松耦合简单API的package应当在初期就设计好，否则在项目后期大量的Exported function会导致难以判断接口的必要性，介于compat package的存在，我们不得不做出了一些妥协。但是由于otr是一个协议lib而非app，严格地设计接口是非常有必要且必须先行考虑的事情。
+Golint和GoDoc可以作为接口审查的工具，通过阅读自动生成的GoDoc就可以检查接口暴露的情况，例如[compat](https://godoc.org/github.com/twstrike/otr3/compat),[otr3](https://godoc.org/github.com/twstrike/otr3)比较两份文档的export接口数量，以及是否有type并不需要暴露到包外，都可以直观地阅读出来。
 
 ### Embedding abuse
 
@@ -114,7 +114,7 @@ func main() {
 
 如果你不希望释放对象a内的数据，那么这里的`b := a.bs`就应该替换为`b:=make([]byte,len(a.bs)); copy(b[:],a.bs)`
 
-另外每次进行传指针操作后，dereference也需要一定开销，因此对于小对象，从性能优化的角度出发，了解pointer的运作方式是非常必要的。
+另外每次进行传指针操作后，dereference也需要一定开销，因此对于大小对象的传参，从性能优化的角度出发，了解pointer的运作方式是非常必要的。
 
 ### Goroutines and CSP
 
