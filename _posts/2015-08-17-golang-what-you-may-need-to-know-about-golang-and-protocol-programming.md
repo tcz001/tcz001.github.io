@@ -37,13 +37,7 @@ docker、etcd、raft、nsq，尽管go并不是万金油，但是作为一门系�
 
 GoDeps可以将workspace与test vendor分离开来，并且提供了类似ruby下bundle的依赖环境工具。
 
-### Imports and Exports
-
-由于Golang简约设计的原则限制，一个松耦合简单API的package应当在初期就设计好，否则在项目后期大量的Exported function会导致难以判断接口的必要性，介于compat package的存在，我们不得不做出了一些妥协。但是由于otr是一个协议lib而非app，严格地设计接口是非常有必要且必须先行考虑的事情。
-
-Golint和GoDoc可以作为接口审查的工具，通过阅读自动生成的GoDoc就可以检查接口暴露的情况，例如[compat](https://godoc.org/github.com/twstrike/otr3/compat),[otr3](https://godoc.org/github.com/twstrike/otr3)比较两份文档的export接口数量，以及是否有type并不需要暴露到包外，都可以直观地阅读出来。
-
-它可以在你的目录下生成如下结构的Godeps文件夹，其中Godeps可以帮助你跟踪依赖的改变情况，同时可以使用`godep go test ./...`来跑测试。
+通过`godep save ./...`可以在你的目录下生成如下结构的Godeps文件夹，其中Godeps可以帮助你跟踪依赖的改变情况，同时可以使用`godep go test ./...`来跑测试。
 
 ```
 Godeps
@@ -51,6 +45,12 @@ Godeps
 ├── Readme
 └── _workspace
 ```
+
+### Imports and Exports
+
+由于Golang简约设计的原则限制，一个松耦合简单API的package应当在初期就设计好，否则在项目后期大量的Exported function会导致难以判断接口的必要性，介于compat package的存在，我们不得不做出了一些妥协。但是由于otr是一个协议lib而非app，严格地设计接口是非常有必要且必须先行考虑的事情。
+
+Golint和GoDoc可以作为接口审查的工具，通过阅读自动生成的GoDoc就可以检查接口暴露的情况，例如[compat](https://godoc.org/github.com/twstrike/otr3/compat),[otr3](https://godoc.org/github.com/twstrike/otr3)比较两份文档的export接口数量，以及是否有type并不需要暴露到包外，都可以直观地阅读出来。
 
 ### Embedding abuse
 
