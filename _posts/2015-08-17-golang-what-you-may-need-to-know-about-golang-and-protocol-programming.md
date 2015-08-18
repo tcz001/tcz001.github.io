@@ -10,7 +10,7 @@ title: "Golang-Seven weeks Seven tips in Golang for Message protocol"
 
 
 
-## 从何谈起？
+## 为什么选型最后确定了Golang
 
 Golang是一门设计很“简约”的语言（尤其与其竞争对手c++相比），编译强类型语言+运行时垃圾回收，没有内建繁芜的函数式特性，总的来说，它适用的场景从最火热的几个杀手级项目就可以看出一些端倪了。
 
@@ -24,8 +24,11 @@ docker、etcd、raft、nsq，尽管go并不是万金油，但是作为一门系�
 
 ## 说这么多，那到底我需要知道什么？
 
-一些常见问题，在golang的[FAQ](https://golang.org/doc/faq)中已经被解释过了，
-下面就谈谈这七周开发中总结的七个容易被忽略的点。
+### Read FAQ before start
+
+一些常见问题，在golang的[FAQ](https://golang.org/doc/faq)中已经被解释过了，尤其是为何没有继承多态、为何没有overloading，为何maps不支持slice的key等等。
+
+下面就谈谈这七周开发中总结的几个容易被轻视的点。
 
 ### Refactor GoPath first
 
@@ -135,11 +138,14 @@ func main() {
 
 Goroutine是golang提供的IOC channel，也可以称作一种implicitly coroutine，在runtime中用来替代多线程异步编程中繁琐的同步机制。
 
-CSP的原始模型：Python的coroutine以及Erlang的process，都是映射到对应的进程中，而Golang中的goroutine则可以被导向至任何一个channel被调用的地方，例如你可以`c := make(chan int)`然后触发五个`a<-c`来并发处理这个channel。
+CSP的原始模型：Python的coroutine以及Erlang的process，都是映射到对应的1:1轻量进程(或线程)中，而Golang中的goroutine则可以被导向至任何一个channel被调用的地方，例如你可以`c := make(chan int)`然后在不同位置触发五个`a<-c`来并发处理这个channel。
 
 Go与Erlang在并发设计上的最大不同，就是Erlang严格遵循了轻量进程的编码原则，而Go在此基础上提供了更高容忍的调度器，`runtime.Gosched()`，`runtime.GOMAXPROCS(n)`等运行时机制都是为了处理这部分任务调度而设计的。
 
 另外defer也可能被误用作一种异步调用模式，然而只有在defer作用于异步goroutine时才能发挥异步作用，而他的真正含义更类似析构函数，强制将该语句放到代码片段的末尾执行而已。
 
-### 
+### Hesitate before redesign your protocol
 
+其实这条并不是从Golang角度出发，而是从otr这个项目本身出发的，otr协议规范中大量采用了状态机和上下文，当我们拿到这样一个实现时，小组的第一直觉是想到优化这种情况，重写了大量的内存逻辑，然而并不是所有的优化点到最后被证明是正确的，尤其是Golang作为拥有GC的语言，它的很多场景与C实现的直接操作内存并不相同，因此在实现状态机时，原本用于优化的cache，并不能保证及时释放，例如上面提到的Wipe out功能，如果没有引入这样的机制，极有可能破坏原本OTR协议的完整性与安全性。
+
+因此在redesign前反复阅读规范，并且参考现有实现，同时根据开发平台的不同采取不同的措施，这些工作在协议编程中缺一不可。
