@@ -1,8 +1,12 @@
 ---
 published: true
-title: "security-man-in-middle DDOS"
+title: "Security-man-in-middle DDOS"
 layout: post
+categories: ""
+splash: ""
+tags: null
 ---
+
 
 ## Github & GreatFire man-in-middle DDOS attack
 
