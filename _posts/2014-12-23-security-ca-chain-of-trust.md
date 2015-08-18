@@ -1,9 +1,12 @@
 ---
 published: true
-title: "security-CA & chain of trust"
-categories: "security"
+title: "Security-CA & chain of trust"
+categories: security
 layout: post
+splash: ""
+tags: null
 ---
+
 
 ## CA & chain of trust
 
