@@ -129,7 +129,7 @@ Embedding是个经常被误解的特性，举个OTR3中的现实例子
 
 Goroutine是golang提供的IOC channel，也可以称作一种implicitly coroutine，在runtime中用来替代多线程异步编程中繁琐的同步机制。
 
-CSP的原始模型：Python的coroutine以及Erlang的process，都是映射到对应的1:1轻量进程(或线程)中，而Golang中的goroutine则可以被导向至任何一个channel被调用的地方，例如你可以`c := make(chan int)`然后在不同位置触发五个`a<-c`来并发处理这个channel。
+CSP的原始模型：Python的coroutine以及Erlang的process，都是映射到对应的1:1轻量进程(或线程)中，而Golang中的goroutine则可以被导向至任何一个channel被调用的地方，例如你可以`c := make(chan int)`，然后在不同位置触发五个`a<-c`来并发处理这个channel。
 
 Go与Erlang在并发设计上的最大不同，就是Erlang严格遵循了轻量进程的编码原则，而Go在此基础上提供了更高容忍的调度器，`runtime.Gosched()`，`runtime.GOMAXPROCS(n)`等运行时机制都是为了处理这部分任务调度而设计的。
 
