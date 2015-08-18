@@ -1,10 +1,13 @@
 ---
 published: true
-title: "STRIKE-AwESome"
+title: "security-AwESome"
 layout: post
 tags: 
   - hacker
+categories: ""
+splash: ""
 ---
+
 
 
 
