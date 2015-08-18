@@ -5,8 +5,9 @@ splash: ""
 tags: 
   - "null"
 published: false
-title: "Golang-What you may need to know about Golang in Protocol Programming"
+title: "Golang-Seven weeks Seven tips in Golang for message protocol"
 ---
+
 
 
 ## 从何谈起？
@@ -14,7 +15,7 @@ title: "Golang-What you may need to know about Golang in Protocol Programming"
 Golang是一门设计很“简约”的语言（尤其与其竞争对手c++相比），编译强类型语言+运行时垃圾回收，没有内建繁芜的函数式特性，总的来说，它适用的场景从最火热的几个杀手级项目就可以看出一些端倪了。
 docker、etcd、raft、nsq、，尽管go并不是万金油，但是作为一门系统级语言，简单的指针操作，原生的gc与并发（Concurrency）支持，拥有编译时类型校验与安全的内存模型，无不使得这个小地鼠（Gopher）显得犀利又可爱。
 
-而STRIKE team，在饱尝Enigmail中使用JavaScript进行安全应用开发的痛苦体验后，选择Go作为隐私消息协议OTR的开发平台，主要也是看重了下面几点：
+而STRIKE team，在饱尝Enigmail中使用JavaScript进行安全应用开发的痛苦体验后，选择Go作为隐私消息协议OTR的开发平台[1]，主要也是看重了下面几点：
 - 性能接近C语言
 - 内存安全，强类型
 - 系统与网络层的大量应用
@@ -104,8 +105,16 @@ func main() {
 
 另外每次进行传指针操作后，dereference也需要一定开销，因此对于小对象，从性能优化的角度出发，了解pointer的运作方式是非常必要的。
 
-### When to use goroutines and when to use defer
+### Goroutines and CSP
 
 Goroutine是golang提供的IOC channel，也可以称作一种implicitly coroutine，在runtime中用来替代多线程异步编程中繁琐的同步机制。
 
-defer常常被误认为一种异步调用模式，然而只有在defer作用于异步goroutine时才能发挥异步作用。
+CSP的原始模型：Python的coroutine以及Erlang的process，都是映射到对应的进程中，而Golang中的goroutine则可以被导向至任何一个channel被调用的地方，例如你可以`c := make(chan int)`然后触发五个`a<-c`来并发处理这个channel。
+
+Go与Erlang在并发设计上的最大不同，就是Erlang严格遵循了轻量进程的编码原则，而Go在此基础上提供了更高容忍的调度器，`runtime.Gosched()`，`runtime.GOMAXPROCS(n)`等运行时机制都是为了处理这部分任务调度而设计的。
+
+另外defer也可能被误用作一种异步调用模式，然而只有在defer作用于异步goroutine时才能发挥异步作用，而他的真正含义更类似析构函数，强制将该语句放到代码片段的末尾执行而已。
+
+
+
+[1]如果你想了解OTR本身请参考Repo(https://github.com/twstrike/otr3)
