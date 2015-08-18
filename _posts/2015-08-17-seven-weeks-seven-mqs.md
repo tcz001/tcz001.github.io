@@ -2,10 +2,12 @@
 categories: ""
 layout: post
 splash: ""
-tags: null
+tags: 
+  - hacker
 published: false
 title: Seven Weeks Seven MQs
 ---
+
 
 ## RabbitMQ
 ## ActiveMQ/Apollo
