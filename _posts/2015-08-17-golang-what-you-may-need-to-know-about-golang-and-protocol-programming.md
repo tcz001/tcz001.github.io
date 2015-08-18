@@ -28,7 +28,7 @@ docker、etcd、raft、nsq，尽管go并不是万金油，但是作为一门系�
 
 一些常见问题，在golang的[FAQ](https://golang.org/doc/faq)中已经被解释过了，尤其是为何没有继承多态、为何没有overloading，为何maps不支持slice的key等等。
 
-下面就谈谈这七周开发中总结的几个容易被轻视的点。
+下面就谈谈这七周开发中总结的几个拙见。
 
 ### Refactor GoPath first
 
