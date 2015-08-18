@@ -23,7 +23,7 @@ docker、etcd、raft、nsq，尽管go并不是万金油，但是作为一门系�
 - 开发上手快，容易保证代码质量
 - 作为有gc同时又能操作指针的语言，福祸参半
 
-## 说这么多，那到底我需要知道什么？
+## 说这么多，那到底我需要关注什么？
 
 ### Read FAQ before start
 
@@ -43,12 +43,10 @@ GoDeps可以将workspace与test vendor分离开来，并且提供了类似ruby�
 
 通过`godep save ./...`可以在你的目录下生成如下结构的Godeps文件夹，其中Godeps可以帮助你跟踪依赖的改变情况，同时可以使用`godep go test ./...`来跑测试。
 
-
         Godeps
         ├── Godeps.json
         ├── Readme
         └── _workspace
-
 
 ### Imports and Exports
 
