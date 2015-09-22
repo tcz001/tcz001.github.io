@@ -26,8 +26,12 @@ It also stops revealing the sending MAC keys. The finite-state analysis of the o
 
 According to the changes in spec, "take all of the receiving MAC keys" and "take MAC keys that were actually used to verify a MAC on a message", that means when DH key is rotated, it should cache receiving MAC keys in the keyslot, and later enforce revealing these MAC keys in the next reveal step.
 
-[1]otr3 - https://github.com/twstrike/otr3
-[2]Bug fixed - https://github.com/golang/crypto/commit/aedad9a179ec1ea11b7064c57cbc6dc30d7724ec
-[3]Specifics - https://otr.cypherpunks.ca/Protocol-v3-4.0.0.html
-[4]The finite-state analysis - http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.165.7945&rep=rep1&type=pdf
-[5]Update of spec v2 - http://sourceforge.net/p/otr/libotr/ci/58fd90cb77c836ff9fa762e91d2b2becc6d5aae8/
+[1]otr3(https://github.com/twstrike/otr3)
+
+[2]Bug fixed(https://github.com/golang/crypto/commit/aedad9a179ec1ea11b7064c57cbc6dc30d7724ec)
+
+[3]Specifics(https://otr.cypherpunks.ca/Protocol-v3-4.0.0.html)
+
+[4]The finite-state analysis(http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.165.7945&rep=rep1&type=pdf)
+
+[5]Update of spec v2(http://sourceforge.net/p/otr/libotr/ci/58fd90cb77c836ff9fa762e91d2b2becc6d5aae8/)
