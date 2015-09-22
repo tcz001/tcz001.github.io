@@ -2,8 +2,9 @@
 categories: ""
 layout: post
 splash: ""
-tags: null
-published: false
+tags: 
+  - "null"
+published: true
 title: "STRIKE-OTR"
 ---
 
