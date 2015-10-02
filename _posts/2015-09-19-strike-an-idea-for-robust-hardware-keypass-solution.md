@@ -2,10 +2,12 @@
 categories: ""
 layout: post
 splash: ""
-tags: null
+tags: 
+  - "null"
 published: false
-title: "STRIKE - An idea for robust hardware keypass solution"
+title: "STRIKE - ideas for robust hardware solutions"
 ---
+
 
 ## How we do now?
 
