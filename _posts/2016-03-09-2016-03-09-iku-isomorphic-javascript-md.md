@@ -5,8 +5,9 @@ splash: ""
 tags: 
   - murmur
 published: false
-title: "2016-03-09-iku-Isomorphic-JavaScript.md"
+title: "iku-Isomorphic-JavaScript.md"
 ---
+
 
 ## 同构JavaScript
 
