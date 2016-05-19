@@ -17,7 +17,7 @@ Torchz.net is a dream of flame over net, sharing knowledge as well as fun, it wi
 fan.torchz@gmail.com
 
 GPG: 
-
+```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Comment: GPGTools - https://gpgtools.org
 
@@ -447,3 +447,4 @@ SuBpU0Uy+FcLhQbY6B68SG7kfmpjyrwImk/e+m5HFvcN5sH5Z8IJYUydxwo3yyGC
 HfN9vgImk/TgD0Rx8AsHFZgS6+wxtegcey3MUUruJpyv/nv0Ozk=
 =YvVx
 -----END PGP PUBLIC KEY BLOCK-----
+```
