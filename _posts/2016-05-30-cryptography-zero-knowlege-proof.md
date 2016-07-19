@@ -1,7 +1,7 @@
 ---
 layout: post
-published: false
-title: "Cryptography-Zero-knowlege-proof"
+published: true
+title: Cryptography-Zero-knowlege-proof
 ---
 ## A inperfect partial proof and verification
 
