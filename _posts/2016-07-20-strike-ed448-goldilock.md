@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: STRIKE-ed448-goldilock
 ---
 ## 数学模型到真正的计算模型
