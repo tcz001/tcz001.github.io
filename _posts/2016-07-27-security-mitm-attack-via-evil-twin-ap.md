@@ -26,7 +26,9 @@ On desktop, redirect the tcpdump output into local file.
 
 `ssh user@ROUTER_IP "tcpdump -s 0 -U -w - -i ra0 not port 22 and not host DESKTOP_IP" > /tmp/all.cap`
 
-and then `mkdir /tmp/chaos && cd /tmp/chaos && chaosreader /tmp/all.cap`
+and then
+
+`mkdir /tmp/chaos && cd /tmp/chaos && chaosreader /tmp/all.cap`
 
 this will extract all the traffic which are in plaintext and then create a index.html in current folder, open the index.html, you will see a report with images and HTTP requests. Enjoy it.
 
