@@ -7,7 +7,7 @@ title: Security-MITM-attack-via-Evil-twin-AP
 
 ### Prepare
 
-- A router with OpenWRT
+- A router with OpenWRT (If you want to try on your laptop, try aircrack-ng also)
 - Desktop for auditing
 
 ### Quick Start
