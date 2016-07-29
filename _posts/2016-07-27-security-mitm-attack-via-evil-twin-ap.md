@@ -34,6 +34,6 @@ this will extract all the traffic which are in plaintext and then create a index
 
 - WPA is resisting MITM through four handshakes
 
-computing a shared secret composite of a passphrase, a nonce and BSSID, without revealing any infomation about the passphrase, both Client and AP. This is also using a Key Exchange protocol to avoid replay/MITM attack.
+Both sides computing a shared secret from a passphrase and a nonce using PBKDF2-SHA1, without revealing any infomation about the passphrase, both Client and AP. This is also using a Key Exchange protocol to avoid replay/MITM attack.
 
 - Https Spoofing is not included in this tiral, because it's kind of tricky when you have to use a illegal certificate or have to attack TLS protocol from basis, will mention it next time.
