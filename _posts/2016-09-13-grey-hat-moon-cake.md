@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: ' 灰帽说 - 请珍惜你身边的灰帽子'
 ---
 ## 灰帽说 - 请珍惜你身边的灰帽子
