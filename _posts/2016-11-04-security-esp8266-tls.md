@@ -5,7 +5,7 @@ title: Security-esp8266/TLS
 ---
 ## Bad esp8266
 
-As we know, esp8266 is an awesome platform, able to do a lot and has been used in many IOT solutions, but usually in a very insecure way, not able to avoid MITM attack. What's worse, there are many implementation using http Basic/Auth to achieve authentication, which reveals a bunch of credentials with unawareness.
+As we know, esp8266 is an awesome platform, able to do a lot and has been used in many IOT solutions, but usually in a very insecure way, not able to avoid MITM attack. What's worse, there are many implementation using http Basic-Auth to achieve authentication, which reveals a bunch of credentials with unawareness.
 
 ## Call for TLS
 
