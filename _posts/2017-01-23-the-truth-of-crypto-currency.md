@@ -24,3 +24,7 @@ Besides, authorities need to be able to adjust their trading rates according to 
 ## Checkout the Certificate Authorities
 
 CA has been a very classical concept in internet for long long time, and I believe it's mapping the real situation of the trust world quite well. If you look into the trust chain of certificates, it behave quite similar to our definition of currencies in real world, that's why Hyperledger introduce this as the most charming feature for real industry, not for financial game players. It's desinged as a solution, not a business.
+
+## Only crypto can save crypto
+
+Now this comes back to the battle field of CA or more generally, the world of crypto, we can see some projects like [Certificate Transparency](https://www.certificate-transparency.org/) are trying to achieve better auditable system, but still we are missing a real solution for the trust itself, after mixing privacy and transparency, this becomes more and more a mission impossible till now.
