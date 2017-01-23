@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: Cryptography - The Truth of Crypto Currency
+title: Cryptography-The-Truth-of-Crypto-Currency
 ---
 ## Why we failed so many times?
 
