@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: The Truth of Crypto Currency
 ---
 ## Why we failed so many times?
