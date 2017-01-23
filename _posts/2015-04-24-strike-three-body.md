@@ -1,13 +1,13 @@
 ---
 published: true
-title: "STRIKE-Three Body"
+title: STRIKE-Three Body
 layout: post
-tags: 
+tags:
   - hacker
   - murmur
 ---
 
-##三体
+## 三体
 
 在漫长的飞行空闲里一口气看了三个烧脑片，超体，模仿游戏，万物理论（好吧其实万物理论一点都不烧脑）
 
