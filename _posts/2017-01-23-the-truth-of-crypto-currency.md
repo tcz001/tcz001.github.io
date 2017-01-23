@@ -15,7 +15,7 @@ Crypto coins, namely currency, most of the systems are sharing same trust of val
 
 Like most currencies we know in real world, crypto currencies should also be certificates of trust, where people believe there is enough *power* to enforce the fiat money(by law or by violence) being stably valuable during resources/products were made/traded, they should firstly map the real-world product increment outside of financial system. 
 
-We are missing this control of issuing currencies that matches real-world product increment in most solutions using blockchain as trading system. Ripple is a sound example here, though it was aiming at providing financial payment solution, most of part are done correctly, except that how they issue the currencies still didn't change, a huge mistake from basis.
+We are missing this control of issuing currencies that matches real-world product increment in most solutions using blockchain as trading system. Ripple is a sound example here, though it was aiming at providing financial payment solution, most of part are done correctly, except that how they issue the currencies still didn't change(XRP), a huge mistake from basis.
 
 Authority need to be outside of financial system not inside. Because the freely trading market has been proven fragile, people introduce social market economy system(or maybe planning economy), there are some saying goes when *Decentralization* becames a slogan in most cases, they are just phenomenon of class contradictions, and *Decentralization* is yet another buzz word same as revolution/disruption in people's eyes.
 
