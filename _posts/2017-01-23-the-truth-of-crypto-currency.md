@@ -28,3 +28,5 @@ CA has been a very classical concept in internet for long long time, and I belie
 ## Only crypto can save crypto
 
 Now this comes back to the battle field of CA or more generally, the world of crypto, we can see some projects like [Certificate Transparency](https://www.certificate-transparency.org/) are trying to achieve better auditable system, but still we are missing a real solution for the trust itself, after mixing privacy and transparency, this becomes more and more a mission impossible till now.
+
+There must be some new killer crypto primitives needs to be invented or redesigned to solve the problem, as STRIKE we are working on [Dual Receiever Cryptos](https://github.com/twstrike/cramershoup/blob/master/src/include/cramershoup.h#L76), and [Ring signatures](https://github.com/twstrike/otrv4/blob/master/otrv4.md#rom-authentication) hoping that may inspire some new ideas around the new structure of current crypto world.
