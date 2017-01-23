@@ -1,18 +1,16 @@
 ---
 published: true
-title: "Security-AwESome"
+title: Security-AwESome
 layout: post
-tags: 
+tags:
   - hacker
-categories: ""
-splash: ""
 ---
 
 
 
 
 
-#STRIKE GOes AwESome
+# STRIKE GOes AwESome
 
 Last two weeks we've been implementing the Advance Encyption Algorithm, a symetric block cypher, with the Go programming language. The goals being to get acquianted with implementation of cryptographic primitives and a modern low level programming language. We definitely started with the right foot these two weeks by having Reinaldo finally in Quito.
 
@@ -53,15 +51,15 @@ Today STRIKE closes this week expecting Tania to arrive from Porto Alegre and Ol
 [3] https://en.wikipedia.org/wiki/Rijndael_key_schedule
 [4] https://en.wikipedia.org/wiki/Padding_(cryptography)
 
-### ###
-From here below looks to me it is material for a tecnical blog for insights were we can explain things in more detail.
-### ###
 
-###Padding with PKCS7
+From here below looks to me it is material for a tecnical blog for insights were we can explain things in more detail.
+
+
+### Padding with PKCS7
 
 When used in a block cipher mode of operation (CBC, ECB) makes them vulnerable to padding oracle attacks (https://en.wikipedia.org/wiki/Padding_(cryptography)#Block_cipher_mode_of_operation and https://blog.skullsecurity.org/2013/padding-oracle-attacks-in-depth).
 
-###Simple block mode ECB
+### Simple block mode ECB
 
 why it's not safe: 
     pseudo-randomness is a important principle for cryptography, it will enhence the protocol by making it hard to guess in a linear field of time.
@@ -70,19 +68,19 @@ why it's not safe:
 
 > The image on the right is how the image might appear encrypted with CBC, CTR or any of the other more secure modes—indistinguishable from random noise. Note that the random appearance of the image on the right does not ensure that the image has been securely encrypted; many kinds of insecure encryption have been developed which would produce output just as "random-looking".
 
-###Chained block mode CBC
+### Chained block mode CBC
 
-###AES 128/192/256
-####AES key expanding
+### AES 128/192/256
+#### AES key expanding
 
 Key expanding is a way to build up a stronger key schedule for multirounds cipher, it makes each round has a independent key for encryption which increase the cost of guessing the origin key.
 
-####AES cipher algorithm
+#### AES cipher algorithm
 
 Inside of the cipher algorithm, you will need to implement states transformations for that block: SubBytes(), ShiftRows(), MixColumns(), AddRoundKey().
 S-Box is an important optimized table used in SubBytes() also following the pseudo-randomness principle, the generation of S-Box in AES is 1) non-linearity 2) algebraic complexity.
 
-##... and back again
+## ... and back again
 
 From padded to not padded
 
