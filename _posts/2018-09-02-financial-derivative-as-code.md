@@ -17,7 +17,7 @@ title: Financial derivative as code
 
 ### 期货future
 
-按约定时间获得的物品
+按约定时间获得的物品和证券
 
 ### 期权与权证option
 
