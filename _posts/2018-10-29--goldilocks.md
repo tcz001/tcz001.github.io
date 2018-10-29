@@ -1,9 +1,9 @@
 ---
 layout: post
-published: false
+published: true
 title: 用Goldilocks原则探索微服务治理平台
 ---
-## A New Post
+# 用Goldilocks原则探索微服务治理平台
 
 > “金发姑娘原则(Goldilocks principle)”源自童话《金发姑娘和三只熊》的故事 *:
 > 迷路的金发姑娘未经允许就进入了熊的房子,她尝了三只碗里的粥,试了三把椅子,又在三张床上躺了躺,最后决定小碗里的粥最可口,小椅子坐着最舒服,小床上躺着最惬意,因为那是最适合她的,不大不小刚刚好｡
