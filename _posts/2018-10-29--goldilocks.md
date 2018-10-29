@@ -12,7 +12,7 @@ title: 用Goldilocks原则探索微服务治理平台
 > 金发姑娘选择事物的方法被称作金发姑娘原则。
 > * 最初的故事原型是《老妇人与三只熊》
 
-在去年的一篇博客《微网关与服务啮合》中，我回顾了云原生生态下微服务的部署架构历经组件、代理、网关，一步步发展到现在的边车微网关(Sidecar MicroGateway)和服务啮合(Service Mesh)模式。
+在去年的一篇博客《[微网关与服务啮合](https://insights.thoughtworks.cn/microgateway-and-service-mesh/)》中，我回顾了云原生生态下微服务的部署架构历经组件、代理、网关，一步步发展到现在的边车微网关(Sidecar MicroGateway)和服务啮合(Service Mesh)模式。
 
 今年，在开展微服务治理平台落地的过程中，对这个方向有了更深的理解和实践，由于k8s等工具带来了运维效率的大大提升，我们看到越来越多的企业IT部门开始采用容器化平台。
 
@@ -47,7 +47,7 @@ title: 用Goldilocks原则探索微服务治理平台
 
 ### 优势与困难并存的Sidecar策略
 
-在文首提到的博客中，我们重点提到了Sidecar模式，之所以会提到Sidecar是因为在“Service Mesh”的概念下，Sidecar被作为一种具备实操性的部署方案提出来，并逐渐成为一种经典实践，恰恰是由云环境的复杂性决定的。
+在文首提到的[博客](https://insights.thoughtworks.cn/microgateway-and-service-mesh/)中，我们重点提到了Sidecar模式，之所以会提到Sidecar是因为在“Service Mesh”的概念下，Sidecar被作为一种具备实操性的部署方案提出来，并逐渐成为一种经典实践，恰恰是由云环境的复杂性决定的。
 
 ![sidecar.png]({{site.baseurl}}/media/sidecar.png)
 
