@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+published: false
 title: 用Goldilocks原则探索微服务治理平台
 ---
 # 用Goldilocks原则探索微服务治理平台
