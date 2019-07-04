@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: 2019-07-04-next-generation-trap-and-courage-with-insights.md
 ---
 # 隔代陷阱 与 胆识型文化
