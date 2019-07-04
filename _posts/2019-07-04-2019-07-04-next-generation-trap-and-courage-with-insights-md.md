@@ -2,6 +2,8 @@
 layout: post
 published: true
 title: 隔代陷阱 与 胆识型文化
+tags:
+  - murmur
 ---
 # 隔代陷阱 与 胆识型文化
 
