@@ -63,7 +63,7 @@ tags:
 ![new structure]({{site.baseurl}}/media/new-structure.png)
 
 
-而ThoughtWorks也在尝试一些组织结构调整的新思路，令人眼前一亮的是将 BU（Business Unit 业务单元）与 MU（Market Unit 市场单元）融合，并通过“**强调统一价值主张的前提下，分离KPI**”的方式，重新让混合架构中的多种“社会分工”回到了一个圆桌上，让MU专注于专业性服务以及加深客户合作，让BU专注于深度研发并扩大行业影响力，再通过鼓励绩效双算，加强合作减少竞争。并且，通过 Why Initiative ，也能让组织中的每个人都能清晰感知到自己在反馈环中的角色与价值，并在组织愿景上达成共识，是很有效的一项举措。
+而ThoughtWorks也在尝试一些组织结构调整的新思路，令人眼前一亮的是[针对团队间协作的问题](https://insights.thoughtworks.cn/leadership-and-team-collaboration/)将 BU（Business Unit 业务单元）与 MU（Market Unit 市场单元）融合，并通过“**强调统一价值主张的前提下，分离KPI**”的方式，重新让混合架构中的多种“社会分工”回到了一个圆桌上，让MU专注于专业性服务以及加深客户合作，让BU专注于深度研发并扩大行业影响力，再通过鼓励绩效双算，加强合作减少竞争。并且，通过 Why Initiative ，也能让组织中的每个人都能清晰感知到自己在反馈环中的角色与价值，并在组织愿景上达成共识，是很有效的一项举措。
 
 ## 胆识型文化，做谦卑的挑战者
 
