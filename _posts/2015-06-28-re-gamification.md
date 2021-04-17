@@ -1,10 +1,8 @@
 ---
 published: true
-title: "Gamo-ReGamification"
+title: Gamo-ReGamification
 layout: post
-categories: ""
-splash: ""
-tags: 
+tags:
   - hacker
 ---
 
@@ -19,9 +17,9 @@ tags:
 
 小平是个十足的实用主义黑客，从nodejs到avos的重度使用，无不看出他们把优秀的hacker基因划入急速的产品交付中的能力，这点和TW的工作模式其实是有很大共通性的，只不过在互联网大潮中，我们渐渐在失去这个优势，如果说敏捷是TW基因里最有价值的东西，那么Gamification便是Agile的核心思想。
 
-肖然的咨询分享里提到一句“Poster 是我们咨询中最强大的武器，当你面前的墙上贴满poster时，就可以是一口气了，因为有这么多问题，随便从哪里开始都可以了。”
+肖然的咨询分享里提到一句“sticker(便利贴)是我们咨询中最强大的武器，当你面前的墙上贴满sticker时，就可以是一口气了，因为有这么多问题，随便从哪里开始都可以了。”
 
-Poster是敏捷的一项gamification创新，一些看似平常的贴纸，再通过条条框框分割开来，就是inception的第一步“发散与归类”。
+便利贴工作坊是敏捷的一项gamification创新，一些看似平常的贴纸，再通过条条框框分割开来，就是inception的第一步“发散与归类”。
 
 ### 如何界定游戏化
 
