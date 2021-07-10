@@ -9,7 +9,7 @@ As we know, esp8266 is an awesome platform, able to do a lot and has been used i
 
 ## Call for TLS
 
-We need a solution to do IOT communication in a more secure way to protect personal data. HTTPS reverse agent can be a solution, but will require another device to handle traffic. This sometimes can't be accepted in practice especially when IOT has a very restricted size and cost limitation.
+We need a solution to do IOT communication in a more secure way to protect personal data. HTTPS reverse proxy can be a solution, but will require another device to handle traffic. This sometimes can't be accepted in practice especially when IOT has a very restricted size and cost limitation.
 
 That's why a TLS library is very urgent right now.
 
