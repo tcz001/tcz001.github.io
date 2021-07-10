@@ -5,10 +5,11 @@ splash: ""
 tags: 
   - "null"
 published: true
-title: "STRIKE-OTR"
+title: "STRIKE-OTR3"
 ---
 
-#How implementing the new OTR protocol fixed a bug in the previous one
+
+#How implementing the new OTR3 protocol fixed a bug in the previous one
 
 In the latest 4-6 weeks a group of ThoughtWorks named STRIKE were working on a new implementation on OTR(Off-The-Record) version 3 protocol, which is a security layer widely used in XMPP-based communication tools. After 6 weeks work we achieved a new lib[1] in golang and also fixed a bug[2] in the previous one.
 We choose Golang as the platform because it's memory-safe and easy to start with. And the existing implementation of OTR in golang is in version 2, without the support of multiple instance tags for multi-devices usage.
